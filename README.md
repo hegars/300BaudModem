@@ -1,4 +1,4 @@
-# 300BaudModem
+# 300 Baud Audio FSK Modem
  300 Baud Audio FSK Modem on a Eurocard 160x100 card(for power right now) for either rail mount or desktop chassis running the "Arduino Bell 103 and ITU V.21 modem" https://github.com/cstroie/Arabell300 
 
  ![main](/images/main.png)
@@ -28,7 +28,7 @@ RetreoBrew Interface (https://www.retrobrewcomputers.org/doku.php?id=boards:ecb:
 * MAX232 RS232 to ttl?
 * Address Decoders
 
-## Case
+## Case Options
 ![Case](/images/case.jpg)
 
 ## POTS Telephone Hybrid interface

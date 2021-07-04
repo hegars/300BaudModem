@@ -31,7 +31,7 @@ RetreoBrew Interface (https://www.retrobrewcomputers.org/doku.php?id=boards:ecb:
 ## Case Options
 ![Case](/images/case.jpg)
 
-## POTS Telephone Hybrid interface
+## Hybrid Telephone Interface
 
 
 ## Arabell300 Pins

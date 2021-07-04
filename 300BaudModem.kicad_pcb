@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 50)
+    (drawings 52)
     (tracks 0)
     (zones 0)
     (modules 28)
@@ -1716,6 +1716,8 @@
     (pad "" np_thru_hole circle (at 3.57 -5.55) (size 3.5 3.5) (drill 3.5) (layers *.Cu *.Mask))
   )
 
+  (gr_poly (pts (xy 234.95 44.196) (xy 74.93 44.196) (xy 74.93 42.164) (xy 234.95 42.164)) (layer F.Mask) (width 0.1) (tstamp 60E1D62F))
+  (gr_poly (pts (xy 234.95 142.24) (xy 74.93 142.24) (xy 74.93 140.208) (xy 234.95 140.208)) (layer F.Mask) (width 0.1))
   (gr_text DCE (at 134.62 141.478 90) (layer F.SilkS) (tstamp 60E19EA7)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )

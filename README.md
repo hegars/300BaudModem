@@ -1,5 +1,5 @@
 # 300BaudModem
- 300 Baud Modem Audo FSK Modem on a Eurocard 100x160 (for power right now) based on the Arduino Bell 103 and ITU V.21 modem https://github.com/cstroie/Arabell300 
+ 300 Baud Audio FSK Modem on a Eurocard 160x100 card(for power right now) for either rail mount or desktop chassis running the "Arduino Bell 103 and ITU V.21 modem" https://github.com/cstroie/Arabell300 
 
  ![main](/images/main.png)
  

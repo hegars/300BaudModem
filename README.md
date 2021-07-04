@@ -12,3 +12,11 @@ Features
 * Audio Interace via 3.5mm stereo jack
 * 600ohm Line interface
 * Some sort of SLIC
+
+RetreoBrew Interface
+* 16550 Interface
+* MAX232 RS232 to ttl?
+* Address Decoders
+
+## Case
+![Case](/images/case.jpg)

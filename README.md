@@ -22,7 +22,8 @@ Features
 * Interface for WIFI Modem (https://github.com/bozimmerman/Zimodem)
 * I2C Expander? 16bit MCP23017
 
-RetreoBrew Interface
+RetreoBrew Interface (https://www.retrobrewcomputers.org/doku.php?id=boards:ecb:start)
+* DIN41612 3x32pin
 * 16550 Interface to backplane
 * MAX232 RS232 to ttl?
 * Address Decoders

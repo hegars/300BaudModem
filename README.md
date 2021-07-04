@@ -32,7 +32,7 @@ RetreoBrew Interface (https://www.retrobrewcomputers.org/doku.php?id=boards:ecb:
 ![Case](/images/case.jpg)
 
 ## Hybrid Telephone Interface
-
+https://www.epanorama.net/documents/telecom/teleinterface.html
 
 ## Arabell300 Pins
 Indications

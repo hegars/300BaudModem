@@ -11,7 +11,7 @@ Features
 )
 * DB9 Female DCE with selectable DTE/DCE via MAX214 with full RS232 siginalling drivers
 * Eurocard 160x100 DIN41612 Following Retrobrew ECB Pinout
-* Audio Interace via 3.5mm stereo jack
+* Audio TRS Interace via 3.5mm stereo jack Tip/Transmit Ring/Receive Sleve/Ground
 * RJ12 600ohm Line POTS interface
 * OFF/ON Hook Relay 
 * Some sort of SLIC?? Can I use X100M??

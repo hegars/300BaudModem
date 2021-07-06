@@ -551,50 +551,22 @@ F 3 "" H 1550 1050 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	550  550  550  7050
-Text GLabel 9650 3750 2    50   Input ~ 0
-Mega-PD6
-Text GLabel 9650 3750 0    50   Input ~ 0
-TTL-RTS
-Text GLabel 9650 3850 0    50   Input ~ 0
-TTL-CTS
-Text GLabel 9650 3550 0    50   Input ~ 0
-TTL-DTR
-Text GLabel 9650 3650 0    50   Input ~ 0
-TTL-DSR
-Text GLabel 9650 3350 0    50   Input ~ 0
-TTL-TX
-Text GLabel 9650 3250 0    50   Input ~ 0
-TTL-RX
-Text GLabel 9650 3950 0    50   Input ~ 0
-TTL-DCD
-Text GLabel 9650 3450 0    50   Input ~ 0
-TTL-RI
-Text GLabel 9650 3850 2    50   Input ~ 0
-Mega-PD7
-Text GLabel 9650 3550 2    50   Input ~ 0
-Mega-PD4
-Text GLabel 9650 3650 2    50   Input ~ 0
-Mega-PD5
-Text GLabel 9650 3450 2    50   Input ~ 0
-Mega-PD2
-Text GLabel 9650 3350 2    50   Input ~ 0
-Mega-PD1
-Text GLabel 9650 3250 2    50   Input ~ 0
-Mega-PD0
 Text GLabel 6400 4350 2    50   Input ~ 0
-Mega-PD6
+TTL-RTS
 Text GLabel 6400 4450 2    50   Input ~ 0
-Mega-PD7
+TTL-CTS
 Text GLabel 6400 4150 2    50   Input ~ 0
-Mega-PD4
+TTL-DTR
 Text GLabel 6400 4250 2    50   Input ~ 0
-Mega-PD5
-Text GLabel 6400 3950 2    50   Input ~ 0
-Mega-PD2
+TTL-DSR
 Text GLabel 6400 3850 2    50   Input ~ 0
-Mega-PD1
+TTL-TX
 Text GLabel 6400 3750 2    50   Input ~ 0
-Mega-PD0
+TTL-RX
+Text GLabel 6400 4550 2    50   Input ~ 0
+TTL-DCD
+Text GLabel 6400 3950 2    50   Input ~ 0
+TTL-RI
 Text GLabel 6400 2050 2    50   Input ~ 0
 Mega-PB0
 Text GLabel 6400 2150 2    50   Input ~ 0
@@ -611,8 +583,6 @@ Text GLabel 4800 2050 0    50   Input ~ 0
 Mega-AREF
 Text GLabel 6400 2350 2    50   Input ~ 0
 Mega-PB3
-Text GLabel 6400 4050 2    50   Input ~ 0
-Mega-PD3
 $Comp
 L Device:Crystal Y?
 U 1 1 60EA027F
@@ -629,13 +599,11 @@ Wire Notes Line
 Text Notes 650  700  0    50   ~ 0
 Indications
 Text Notes 600  3200 0    50   ~ 0
-Baseband Inbound
-Text Notes 9100 3150 0    50   ~ 0
-uC to TTL
+Baseband Input (Needs Work)
 Text Notes 600  5200 0    50   ~ 0
-Baseband Outbound
+Baseband Output
 Text Notes 600  6450 0    50   ~ 0
-Baseband Monitor (via AT Command "M1")
+Baseband Monitor (via AT Command "M0/1")
 $Comp
 L Switch:SW_Push SW?
 U 1 1 60EACCC4
@@ -747,43 +715,43 @@ Connection ~ 9750 2600
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?
 U 1 1 60EEF453
-P 8200 3650
-F 0 "J?" H 8250 3967 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 8250 3876 50  0000 C CNN
-F 2 "" H 8200 3650 50  0001 C CNN
-F 3 "~" H 8200 3650 50  0001 C CNN
-	1    8200 3650
+P 8850 3650
+F 0 "J?" H 8900 3967 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 8900 3876 50  0000 C CNN
+F 2 "" H 8850 3650 50  0001 C CNN
+F 3 "~" H 8850 3650 50  0001 C CNN
+	1    8850 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60EF013C
-P 8500 3750
-F 0 "#PWR?" H 8500 3500 50  0001 C CNN
-F 1 "GND" V 8505 3622 50  0000 R CNN
-F 2 "" H 8500 3750 50  0001 C CNN
-F 3 "" H 8500 3750 50  0001 C CNN
-	1    8500 3750
+P 9150 3750
+F 0 "#PWR?" H 9150 3500 50  0001 C CNN
+F 1 "GND" V 9155 3622 50  0000 R CNN
+F 2 "" H 9150 3750 50  0001 C CNN
+F 3 "" H 9150 3750 50  0001 C CNN
+	1    9150 3750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 60EF0858
-P 8500 3550
-F 0 "#PWR?" H 8500 3400 50  0001 C CNN
-F 1 "+5V" V 8515 3678 50  0000 L CNN
-F 2 "" H 8500 3550 50  0001 C CNN
-F 3 "" H 8500 3550 50  0001 C CNN
-	1    8500 3550
+P 9150 3550
+F 0 "#PWR?" H 9150 3400 50  0001 C CNN
+F 1 "+5V" V 9165 3678 50  0000 L CNN
+F 2 "" H 9150 3550 50  0001 C CNN
+F 3 "" H 9150 3550 50  0001 C CNN
+	1    9150 3550
 	0    1    1    0   
 $EndComp
-Text GLabel 8500 3650 2    50   Input ~ 0
+Text GLabel 9150 3650 2    50   Input ~ 0
 Mega-PB3
-Text GLabel 8000 3750 0    50   Input ~ 0
+Text GLabel 8650 3750 0    50   Input ~ 0
 Mega-RST
-Text GLabel 8000 3650 0    50   Input ~ 0
+Text GLabel 8650 3650 0    50   Input ~ 0
 Mega-PB5
-Text GLabel 8000 3550 0    50   Input ~ 0
+Text GLabel 8650 3550 0    50   Input ~ 0
 Mega-PB4
 Wire Wire Line
 	1600 3850 1950 3850
@@ -956,13 +924,13 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60F3E40B
-P 9400 1250
-F 0 "#PWR?" H 9400 1000 50  0001 C CNN
-F 1 "GND" V 9405 1122 50  0000 R CNN
-F 2 "" H 9400 1250 50  0001 C CNN
-F 3 "" H 9400 1250 50  0001 C CNN
-	1    9400 1250
-	0    -1   -1   0   
+P 9650 1550
+F 0 "#PWR?" H 9650 1300 50  0001 C CNN
+F 1 "GND" V 9655 1422 50  0000 R CNN
+F 2 "" H 9650 1550 50  0001 C CNN
+F 3 "" H 9650 1550 50  0001 C CNN
+	1    9650 1550
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8800 1250 8350 1250
@@ -1073,32 +1041,32 @@ $EndComp
 $Comp
 L Connector:AudioPlug4 J?
 U 1 1 60F81E30
-P 8100 4600
-F 0 "J?" H 8157 4925 50  0000 C CNN
-F 1 "AudioPlug4" H 8157 4834 50  0000 C CNN
-F 2 "" H 8450 4500 50  0001 C CNN
-F 3 "~" H 8450 4500 50  0001 C CNN
-	1    8100 4600
+P 8500 4550
+F 0 "J?" H 8557 4875 50  0000 C CNN
+F 1 "AudioPlug4" H 8557 4784 50  0000 C CNN
+F 2 "" H 8850 4450 50  0001 C CNN
+F 3 "~" H 8850 4450 50  0001 C CNN
+	1    8500 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60F83B3F
-P 8700 4500
-F 0 "#PWR?" H 8700 4250 50  0001 C CNN
-F 1 "GND" V 8705 4372 50  0000 R CNN
-F 2 "" H 8700 4500 50  0001 C CNN
-F 3 "" H 8700 4500 50  0001 C CNN
-	1    8700 4500
+P 9100 4450
+F 0 "#PWR?" H 9100 4200 50  0001 C CNN
+F 1 "GND" V 9105 4322 50  0000 R CNN
+F 2 "" H 9100 4450 50  0001 C CNN
+F 3 "" H 9100 4450 50  0001 C CNN
+	1    9100 4450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8700 4800 2    50   Input ~ 0
+Text GLabel 9100 4750 2    50   Input ~ 0
 Baseband-OUT
-Text GLabel 8700 4700 2    50   Output ~ 0
+Text GLabel 9100 4650 2    50   Output ~ 0
 Baseband-IN
 Text Notes 7500 4250 0    50   ~ 0
 Audio Jack
-Text GLabel 8700 4600 2    50   Input ~ 0
+Text GLabel 9100 4550 2    50   Input ~ 0
 Signaling-OFFHOOK
 Wire Wire Line
 	9150 2400 8700 2400
@@ -1120,8 +1088,6 @@ Wire Wire Line
 	9450 2800 9750 2800
 Wire Notes Line
 	7400 3050 10300 3050
-Wire Notes Line
-	9050 4050 9050 3050
 Wire Notes Line
 	550  5050 10300 5050
 $Comp
@@ -1161,7 +1127,7 @@ Text GLabel 5650 5800 2    50   Input ~ 0
 Baseband-IN
 Text GLabel 5650 5900 2    50   Output ~ 0
 Baseband-OUT
-Text GLabel 5650 6100 2    50   Input ~ 0
+Text GLabel 5650 6000 2    50   Input ~ 0
 Signaling-OFFHOOK
 Text GLabel 5150 5700 0    50   Input ~ 0
 TTL-RTS
@@ -1215,8 +1181,8 @@ Wire Notes Line
 	6900 5050 6900 7750
 Wire Notes Line
 	550  7050 4050 7050
-Text GLabel 5650 5600 2    50   Output ~ 0
-Signaling-RING
+Text GLabel 5650 5700 2    50   Output ~ 0
+Signaling-RINGING
 Wire Notes Line
 	10300 550  10300 6450
 Text Notes 6950 5200 0    50   ~ 0
@@ -1324,4 +1290,20 @@ Wire Wire Line
 Wire Wire Line
 	2700 1650 2700 2250
 Connection ~ 2700 2250
+Wire Wire Line
+	9650 1550 9650 1250
+Wire Wire Line
+	9400 1250 9650 1250
+Text GLabel 5650 5500 2    50   Output ~ 0
+Mega-RST
+Text GLabel 5650 6100 2    50   Input ~ 0
+I2C-SDL
+Text GLabel 5650 6200 2    50   Input ~ 0
+I2C-SDA
+Text GLabel 6400 4800 2    50   Input ~ 0
+I2C-SDL
+Text GLabel 6400 4900 2    50   Input ~ 0
+I2C-SDA
+Text GLabel 6400 4050 2    50   Input ~ 0
+Mega-PD3
 $EndSCHEMATC

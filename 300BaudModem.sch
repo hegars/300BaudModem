@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328-P U?
+L MCU_Microchip_ATmega:ATmega328P-A U?
 U 1 1 60DF35F3
 P 6050 3250
 F 0 "U?" H 5406 3296 50  0000 R CNN
@@ -147,12 +147,6 @@ F 3 "" H 3300 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2950 4800
-Wire Wire Line
-	2050 4300 2050 4350
-Wire Wire Line
-	2050 4350 2400 4350
-Wire Wire Line
-	2400 4350 2400 4800
 Wire Wire Line
 	2050 4000 3500 4000
 $Comp
@@ -491,7 +485,6 @@ Wire Notes Line
 	1000 7500 4500 7500
 Wire Notes Line
 	1000 3500 4500 3500
-Connection ~ 2050 4300
 $Comp
 L power:GND #PWR?
 U 1 1 60E7FBCD
@@ -622,7 +615,7 @@ Text GLabel 6650 2550 2    50   Input ~ 0
 Mega-PB5
 Text GLabel 6650 2950 2    50   Input ~ 0
 Mega-PC0
-Text GLabel 5450 2050 0    50   Input ~ 0
+Text GLabel 5050 2050 0    50   Input ~ 0
 Mega-AREF
 Text GLabel 6650 2350 2    50   Input ~ 0
 Mega-PB3
@@ -643,14 +636,14 @@ Wire Notes Line
 	3000 3500 3000 1000
 Text Notes 1100 1150 0    50   ~ 0
 Indications
-Text Notes 1100 3650 0    50   ~ 0
+Text Notes 1050 3650 0    50   ~ 0
 Baseband Inbound
-Text Notes 3050 1150 0    50   ~ 0
+Text Notes 3100 1150 0    50   ~ 0
 BUS to TTL
-Text Notes 1100 5700 0    50   ~ 0
+Text Notes 1050 5650 0    50   ~ 0
 Baseband Outbound
-Text Notes 1150 6900 0    50   ~ 0
-Baseband Outbound Monitor (ATM1)
+Text Notes 1050 6900 0    50   ~ 0
+Baseband Monitor via AT (ATM1)
 $Comp
 L Switch:SW_Push SW?
 U 1 1 60EACCC4
@@ -797,10 +790,8 @@ Text GLabel 6650 2750 2    50   Input ~ 0
 Mega-XTAL2
 Text Notes 7950 2650 0    50   ~ 0
 CLOCK
-Text Notes 9650 2650 0    50   ~ 0
+Text Notes 7950 3650 0    50   ~ 0
 ICSP
-Wire Notes Line
-	9500 3500 9500 2500
 Wire Notes Line
 	10750 1000 10750 3500
 Wire Notes Line
@@ -851,4 +842,79 @@ Wire Wire Line
 	8450 3300 8800 3300
 Wire Wire Line
 	8450 2900 8800 2900
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 60EEF453
+P 8600 4100
+F 0 "J?" H 8650 4417 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 8650 4326 50  0000 C CNN
+F 2 "" H 8600 4100 50  0001 C CNN
+F 3 "~" H 8600 4100 50  0001 C CNN
+	1    8600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EF013C
+P 8900 4200
+F 0 "#PWR?" H 8900 3950 50  0001 C CNN
+F 1 "GND" V 8905 4072 50  0000 R CNN
+F 2 "" H 8900 4200 50  0001 C CNN
+F 3 "" H 8900 4200 50  0001 C CNN
+	1    8900 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60EF0858
+P 8900 4000
+F 0 "#PWR?" H 8900 3850 50  0001 C CNN
+F 1 "+5V" V 8915 4128 50  0000 L CNN
+F 2 "" H 8900 4000 50  0001 C CNN
+F 3 "" H 8900 4000 50  0001 C CNN
+	1    8900 4000
+	0    1    1    0   
+$EndComp
+Text GLabel 8900 4100 2    50   Input ~ 0
+Mega-PB3
+Text GLabel 8400 4200 0    50   Input ~ 0
+Mega-RST
+Text GLabel 8400 4100 0    50   Input ~ 0
+Mega-PB5
+Text GLabel 8400 4000 0    50   Input ~ 0
+Mega-PB4
+Wire Notes Line
+	9500 4500 7850 4500
+Wire Notes Line
+	9500 2500 9500 4500
+Wire Wire Line
+	2050 4300 2400 4300
+Connection ~ 2050 4300
+Wire Wire Line
+	2400 4300 2400 4800
+$Comp
+L Device:C C?
+U 1 1 60EF7F24
+P 5300 2050
+F 0 "C?" V 5048 2050 50  0000 C CNN
+F 1 "100n" V 5139 2050 50  0000 C CNN
+F 2 "" H 5338 1900 50  0001 C CNN
+F 3 "~" H 5300 2050 50  0001 C CNN
+	1    5300 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EF8CF4
+P 5150 2050
+F 0 "#PWR?" H 5150 1800 50  0001 C CNN
+F 1 "GND" H 5155 1877 50  0000 C CNN
+F 2 "" H 5150 2050 50  0001 C CNN
+F 3 "" H 5150 2050 50  0001 C CNN
+	1    5150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2050 5150 2050
+Connection ~ 5150 2050
 $EndSCHEMATC

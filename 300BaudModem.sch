@@ -32,7 +32,7 @@ Text GLabel 3050 3550 2    50   Output ~ 0
 Mega-PC0
 Text GLabel 3150 5500 2    50   Input ~ 0
 Mega-PB3
-Text GLabel 3100 6700 2    50   Input ~ 0
+Text GLabel 3150 6700 2    50   Input ~ 0
 Mega-PD3
 Text GLabel 1550 1400 2    50   Input ~ 0
 Mega-PB0
@@ -326,40 +326,40 @@ Wire Wire Line
 $Comp
 L Device:Buzzer BZ?
 U 1 1 60E6A0E8
-P 2100 6800
-F 0 "BZ?" V 2058 6952 50  0000 L CNN
-F 1 "Buzzer" V 2149 6952 50  0000 L CNN
-F 2 "" V 2075 6900 50  0001 C CNN
-F 3 "~" V 2075 6900 50  0001 C CNN
-	1    2100 6800
+P 2150 6800
+F 0 "BZ?" V 2108 6952 50  0000 L CNN
+F 1 "Buzzer" V 2199 6952 50  0000 L CNN
+F 2 "" V 2125 6900 50  0001 C CNN
+F 3 "~" V 2125 6900 50  0001 C CNN
+	1    2150 6800
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 60E6BF4C
-P 2650 6700
-F 0 "R?" V 2443 6700 50  0000 C CNN
-F 1 "1K" V 2534 6700 50  0000 C CNN
-F 2 "" V 2580 6700 50  0001 C CNN
-F 3 "~" H 2650 6700 50  0001 C CNN
-	1    2650 6700
+P 2700 6700
+F 0 "R?" V 2493 6700 50  0000 C CNN
+F 1 "1K" V 2584 6700 50  0000 C CNN
+F 2 "" V 2630 6700 50  0001 C CNN
+F 3 "~" H 2700 6700 50  0001 C CNN
+	1    2700 6700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2800 6700 3100 6700
+	2850 6700 3150 6700
 Wire Wire Line
-	2500 6700 2200 6700
+	2550 6700 2250 6700
 Wire Wire Line
-	2000 6700 1600 6700
+	2050 6700 1650 6700
 $Comp
 L power:GND #PWR?
 U 1 1 60E6D2CB
-P 1600 6700
-F 0 "#PWR?" H 1600 6450 50  0001 C CNN
-F 1 "GND" H 1605 6527 50  0000 C CNN
-F 2 "" H 1600 6700 50  0001 C CNN
-F 3 "" H 1600 6700 50  0001 C CNN
-	1    1600 6700
+P 1650 6700
+F 0 "#PWR?" H 1650 6450 50  0001 C CNN
+F 1 "GND" H 1655 6527 50  0000 C CNN
+F 2 "" H 1650 6700 50  0001 C CNN
+F 3 "" H 1650 6700 50  0001 C CNN
+	1    1650 6700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -458,12 +458,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 60E7489E
-P 1750 5900
-F 0 "#PWR?" H 1750 5650 50  0001 C CNN
-F 1 "GND" H 1755 5727 50  0000 C CNN
-F 2 "" H 1750 5900 50  0001 C CNN
-F 3 "" H 1750 5900 50  0001 C CNN
-	1    1750 5900
+P 1750 5950
+F 0 "#PWR?" H 1750 5700 50  0001 C CNN
+F 1 "GND" H 1755 5777 50  0000 C CNN
+F 2 "" H 1750 5950 50  0001 C CNN
+F 3 "" H 1750 5950 50  0001 C CNN
+	1    1750 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -549,8 +549,6 @@ F 3 "" H 1550 1050 50  0001 C CNN
 	1    1550 1050
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	550  550  550  7050
 Text GLabel 6400 4350 2    50   Input ~ 0
 TTL-RTS
 Text GLabel 6400 4450 2    50   Input ~ 0
@@ -640,9 +638,9 @@ $EndComp
 Wire Wire Line
 	5800 1500 5800 1750
 Text GLabel 6400 3550 2    50   Input ~ 0
-Mega-RST
+Mega-nRST
 Text GLabel 8350 1250 0    50   Input ~ 0
-Mega-RST
+Mega-nRST
 $Comp
 L Device:R R?
 U 1 1 60EB5974
@@ -834,7 +832,7 @@ F 3 "~" H 9500 5450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 7850 5450 0    50   Input ~ 0
-Mega-RST
+Mega-nRST
 $Comp
 L power:+5V #PWR?
 U 1 1 60F2EE97
@@ -904,7 +902,7 @@ Wire Wire Line
 Connection ~ 9100 5450
 Connection ~ 9350 5450
 Text GLabel 7850 6200 0    50   Input ~ 0
-RST_REQ
+RST_Request
 Wire Wire Line
 	8700 5900 8700 5450
 Connection ~ 8700 5450
@@ -940,34 +938,34 @@ Connection ~ 8800 1250
 $Comp
 L power:+5V #PWR?
 U 1 1 60F455C3
-P 3550 2250
-F 0 "#PWR?" H 3550 2100 50  0001 C CNN
-F 1 "+5V" V 3565 2378 50  0000 L CNN
-F 2 "" H 3550 2250 50  0001 C CNN
-F 3 "" H 3550 2250 50  0001 C CNN
-	1    3550 2250
-	0    1    1    0   
+P 3650 1550
+F 0 "#PWR?" H 3650 1400 50  0001 C CNN
+F 1 "+5V" V 3665 1678 50  0000 L CNN
+F 2 "" H 3650 1550 50  0001 C CNN
+F 3 "" H 3650 1550 50  0001 C CNN
+	1    3650 1550
+	1    0    0    -1  
 $EndComp
 $Comp
 L Regulator_Linear:LM7805_TO220 U?
 U 1 1 60F46AEF
-P 3100 2250
-F 0 "U?" H 3100 2492 50  0000 C CNN
-F 1 "LM7805_TO220" H 3100 2401 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3100 2475 50  0001 C CIN
-F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 3100 2200 50  0001 C CNN
-	1    3100 2250
+P 3200 2250
+F 0 "U?" H 3200 2492 50  0000 C CNN
+F 1 "LM7805_TO220" H 3200 2401 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3200 2475 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 3200 2200 50  0001 C CNN
+	1    3200 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60F4E1AE
-P 3100 2750
-F 0 "#PWR?" H 3100 2500 50  0001 C CNN
-F 1 "GND" H 3105 2577 50  0000 C CNN
-F 2 "" H 3100 2750 50  0001 C CNN
-F 3 "" H 3100 2750 50  0001 C CNN
-	1    3100 2750
+P 3200 2750
+F 0 "#PWR?" H 3200 2500 50  0001 C CNN
+F 1 "GND" H 3205 2577 50  0000 C CNN
+F 2 "" H 3200 2750 50  0001 C CNN
+F 3 "" H 3200 2750 50  0001 C CNN
+	1    3200 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -984,32 +982,25 @@ $EndComp
 $Comp
 L Device:C_Polarized C?
 U 1 1 60F569E8
-P 3550 2550
-F 0 "C?" H 3668 2596 50  0000 L CNN
-F 1 "4.7uF" H 3668 2505 50  0000 L CNN
-F 2 "" H 3588 2400 50  0001 C CNN
-F 3 "~" H 3550 2550 50  0001 C CNN
-	1    3550 2550
+P 3650 2550
+F 0 "C?" H 3768 2596 50  0000 L CNN
+F 1 "4.7uF" H 3768 2505 50  0000 L CNN
+F 2 "" H 3688 2400 50  0001 C CNN
+F 3 "~" H 3650 2550 50  0001 C CNN
+	1    3650 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 2700 3100 2700
+	3200 2550 3200 2700
+Connection ~ 3200 2700
 Wire Wire Line
-	3100 2550 3100 2700
-Connection ~ 3100 2700
+	3200 2700 3200 2750
 Wire Wire Line
-	3100 2700 3100 2750
+	3200 2700 3650 2700
 Wire Wire Line
-	3100 2700 3550 2700
+	3500 2250 3650 2250
 Wire Wire Line
-	3400 2250 3550 2250
-Wire Wire Line
-	3550 2250 3550 2400
-Connection ~ 3550 2250
-Wire Wire Line
-	2800 2250 2700 2250
-Wire Wire Line
-	2700 2250 2700 2400
+	3650 2250 3650 2400
 Text Notes 2300 700  0    50   ~ 0
 Power Regulator (CHECK)
 Wire Notes Line
@@ -1174,8 +1165,6 @@ E&M-M
 Text GLabel 5150 6850 2    50   Input ~ 0
 E&M-SG
 Wire Notes Line
-	4050 7750 6900 7750
-Wire Notes Line
 	4050 550  4050 7750
 Wire Notes Line
 	6900 5050 6900 7750
@@ -1239,13 +1228,13 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 610480DC
-P 2900 1350
-F 0 "#PWR?" H 2900 1100 50  0001 C CNN
-F 1 "GND" H 2905 1177 50  0000 C CNN
-F 2 "" H 2900 1350 50  0001 C CNN
-F 3 "" H 2900 1350 50  0001 C CNN
-	1    2900 1350
-	1    0    0    -1  
+P 3200 1550
+F 0 "#PWR?" H 3200 1300 50  0001 C CNN
+F 1 "GND" H 3205 1377 50  0000 C CNN
+F 2 "" H 3200 1550 50  0001 C CNN
+F 3 "" H 3200 1550 50  0001 C CNN
+	1    3200 1550
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:Polyfuse F?
@@ -1288,14 +1277,11 @@ Connection ~ 5800 1250
 Wire Wire Line
 	5800 1250 5800 1500
 Wire Wire Line
-	2700 1650 2700 2250
-Connection ~ 2700 2250
-Wire Wire Line
 	9650 1550 9650 1250
 Wire Wire Line
 	9400 1250 9650 1250
 Text GLabel 5650 5500 2    50   Output ~ 0
-Mega-RST
+RST_Request
 Text GLabel 5650 6100 2    50   Input ~ 0
 I2C-SDL
 Text GLabel 5650 6200 2    50   Input ~ 0
@@ -1306,4 +1292,67 @@ Text GLabel 6400 4900 2    50   Input ~ 0
 I2C-SDA
 Text GLabel 6400 4050 2    50   Input ~ 0
 Mega-PD3
+Wire Wire Line
+	2700 1650 2700 2250
+Wire Wire Line
+	2700 2700 3200 2700
+Wire Wire Line
+	2900 2250 2700 2250
+Connection ~ 2700 2250
+Wire Wire Line
+	2700 2250 2700 2400
+Wire Wire Line
+	1750 5900 1750 5950
+Text GLabel 3350 7450 2    50   Input ~ 0
+I2C-SDL
+Text GLabel 3350 7550 2    50   Input ~ 0
+I2C-SDA
+$Comp
+L power:+5V #PWR?
+U 1 1 610BA116
+P 3350 7650
+F 0 "#PWR?" H 3350 7500 50  0001 C CNN
+F 1 "+5V" V 3365 7778 50  0000 L CNN
+F 2 "" H 3350 7650 50  0001 C CNN
+F 3 "" H 3350 7650 50  0001 C CNN
+	1    3350 7650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 610BB00C
+P 3350 7350
+F 0 "#PWR?" H 3350 7100 50  0001 C CNN
+F 1 "GND" V 3355 7222 50  0000 R CNN
+F 2 "" H 3350 7350 50  0001 C CNN
+F 3 "" H 3350 7350 50  0001 C CNN
+	1    3350 7350
+	0    -1   -1   0   
+$EndComp
+Text Notes 2700 7150 0    50   ~ 0
+MAC Address Module
+Wire Notes Line
+	2650 7750 2650 7050
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 610C08D3
+P 3150 7550
+F 0 "J?" H 3068 7125 50  0000 C CNN
+F 1 "Conn_01x04" H 3068 7216 50  0000 C CNN
+F 2 "" H 3150 7550 50  0001 C CNN
+F 3 "~" H 3150 7550 50  0001 C CNN
+	1    3150 7550
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	550  550  550  7750
+Wire Notes Line
+	550  7750 6900 7750
+Wire Wire Line
+	3650 1550 3650 2250
+Connection ~ 3650 2250
+Wire Wire Line
+	3200 1550 2900 1550
+Wire Wire Line
+	2900 1550 2900 1350
 $EndSCHEMATC

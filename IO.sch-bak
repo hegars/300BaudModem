@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
+Sheet 6 11
 Title "300 Baud Audio FSK Modem "
 Date "2021-07-08"
 Rev "0.1"
@@ -80,9 +80,9 @@ F 3 "" H 6600 4050 50  0001 C CNN
 	1    6600 4050
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7100 4450 2    50   Input ~ 0
+Text GLabel 7100 4450 2    50   Output ~ 0
 Baseband-IN
-Text GLabel 7100 4550 2    50   Output ~ 0
+Text GLabel 7100 4550 2    50   Input ~ 0
 Baseband-OUT
 Text GLabel 7100 4650 2    50   Input ~ 0
 Signaling-OFFHOOK
@@ -131,7 +131,7 @@ E&M-M
 Text GLabel 2350 4050 2    50   Input ~ 0
 E&M-SG
 Text GLabel 7100 4350 2    50   Output ~ 0
-Signaling-RINGING
+Signaling-RINGDOWN
 $Comp
 L power:GND #PWR?
 U 1 1 60EA1250
@@ -158,8 +158,8 @@ F 3 "~" H 6800 4450 50  0001 C CNN
 	1    6800 4450
 	1    0    0    -1  
 $EndComp
-Text Notes 5200 4500 0    50   ~ 0
-Module Interface
+Text Notes 5000 4500 0    50   ~ 0
+Baseband Module Interface
 Text GLabel 2350 4450 2    50   Input ~ 0
 E&M-R
 Text GLabel 2350 4350 2    50   Input ~ 0

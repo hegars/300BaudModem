@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 10
+Sheet 2 11
 Title "300 Baud Audio FSK Modem "
 Date "2021-07-08"
 Rev "0.1"
@@ -270,4 +270,8 @@ F 3 "~" H 5000 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 4000 4450 4000
+Text GLabel 6750 4050 0    50   Input ~ 0
+E&M-R
+Text GLabel 6750 3850 0    50   Input ~ 0
+E&M-T
 $EndSCHEMATC

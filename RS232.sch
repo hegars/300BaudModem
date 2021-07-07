@@ -24,10 +24,6 @@ F 3 " ~" H 8200 3550 50  0001 C CNN
 	1    8200 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 3200 3400 0    50   Input ~ 0
-TTL-RTS
-Text GLabel 3200 3300 0    50   Input ~ 0
-TTL-CTS
 Text GLabel 3200 3600 0    50   Input ~ 0
 TTL-DTR
 Text GLabel 3200 3500 0    50   Input ~ 0
@@ -36,8 +32,6 @@ Text GLabel 3200 3800 0    50   Input ~ 0
 TTL-TX
 Text GLabel 3200 3900 0    50   Input ~ 0
 TTL-RX
-Text GLabel 3200 3200 0    50   Input ~ 0
-TTL-DCD
 Text GLabel 3200 3700 0    50   Input ~ 0
 TTL-RI
 Text GLabel 7900 3650 0    50   Input ~ 0
@@ -88,4 +82,10 @@ Wire Notes Line
 	5550 2900 4600 2900
 Text Notes 5200 3600 2    50   ~ 0
 MAX214
+Text GLabel 3200 3200 0    50   Input ~ 0
+TTL-DCD
+Text GLabel 3200 3300 0    50   Input ~ 0
+TTL-CTS
+Text GLabel 3200 3400 0    50   Input ~ 0
+TTL-RTS
 $EndSCHEMATC

@@ -14,13 +14,13 @@ Comment3 "SOFTWARE: https://github.com/cstroie/Arabell300"
 Comment4 ""
 $EndDescr
 $Sheet
-S 2500 2500 1000 1000
+S 9800 2550 1000 1000
 U 60E5C27B
 F0 "PCMBus" 50
 F1 "PCMbus.sch" 50
 $EndSheet
 $Sheet
-S 2500 1000 1000 1000
+S 9800 1050 1000 1000
 U 60E5CADB
 F0 "ECBus" 50
 F1 "ECBus.sch" 50

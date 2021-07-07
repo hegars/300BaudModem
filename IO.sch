@@ -237,7 +237,7 @@ $EndComp
 Text GLabel 2450 2250 2    50   Output ~ 0
 Baseband-IN
 Text GLabel 2450 2150 2    50   Output ~ 0
-Signaling-RINGING
+Signaling-RINGDOWN
 Text Notes 850  1050 0    50   ~ 0
 Audio Jack
 $EndSCHEMATC

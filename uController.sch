@@ -221,32 +221,32 @@ $EndComp
 $Comp
 L Switch:SW_Push SW?
 U 1 1 60E968E0
-P 9900 1450
+P 2950 5000
 AR Path="/60E968E0" Ref="SW?"  Part="1" 
 AR Path="/60E76DCE/60E968E0" Ref="SW?"  Part="1" 
-F 0 "SW?" H 9900 1735 50  0000 C CNN
-F 1 "SW_Push" H 9900 1644 50  0000 C CNN
-F 2 "" H 9900 1650 50  0001 C CNN
-F 3 "~" H 9900 1650 50  0001 C CNN
-	1    9900 1450
+F 0 "SW?" H 2950 5285 50  0000 C CNN
+F 1 "SW_Push" H 2950 5194 50  0000 C CNN
+F 2 "" H 2950 5200 50  0001 C CNN
+F 3 "~" H 2950 5200 50  0001 C CNN
+	1    2950 5000
 	1    0    0    -1  
 $EndComp
-Text GLabel 9050 1450 0    50   Input ~ 0
+Text GLabel 2100 5000 0    50   Input ~ 0
 Mega-nRST
 $Comp
 L Device:R R?
 U 1 1 60E968E7
-P 9500 1600
+P 2550 4650
 AR Path="/60E968E7" Ref="R?"  Part="1" 
 AR Path="/60E76DCE/60E968E7" Ref="R?"  Part="1" 
-F 0 "R?" H 9430 1554 50  0000 R CNN
-F 1 "1K" H 9430 1645 50  0000 R CNN
-F 2 "" V 9430 1600 50  0001 C CNN
-F 3 "~" H 9500 1600 50  0001 C CNN
-	1    9500 1600
+F 0 "R?" H 2480 4604 50  0000 R CNN
+F 1 "1K" H 2480 4695 50  0000 R CNN
+F 2 "" V 2480 4650 50  0001 C CNN
+F 3 "~" H 2550 4650 50  0001 C CNN
+	1    2550 4650
 	-1   0    0    1   
 $EndComp
-Text Notes 8500 1250 0    50   ~ 0
+Text Notes 1550 4800 0    50   ~ 0
 Reset (Pullup)
 Text GLabel 8900 3550 0    50   Input ~ 0
 Mega-XTAL1
@@ -254,7 +254,7 @@ Text GLabel 8900 3950 0    50   Input ~ 0
 Mega-XTAL2
 Text Notes 8350 3800 0    50   ~ 0
 CLOCK
-Text Notes 1450 3150 0    50   ~ 0
+Text Notes 1000 1000 0    50   ~ 0
 ICSP
 $Comp
 L Device:C C?
@@ -303,81 +303,76 @@ Connection ~ 10350 3750
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?
 U 1 1 60E96908
-P 2150 3450
+P 1700 1300
 AR Path="/60E96908" Ref="J?"  Part="1" 
 AR Path="/60E76DCE/60E96908" Ref="J?"  Part="1" 
-F 0 "J?" H 2200 3767 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 2200 3676 50  0000 C CNN
-F 2 "" H 2150 3450 50  0001 C CNN
-F 3 "~" H 2150 3450 50  0001 C CNN
-	1    2150 3450
+F 0 "J?" H 1750 1617 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1750 1526 50  0000 C CNN
+F 2 "" H 1700 1300 50  0001 C CNN
+F 3 "~" H 1700 1300 50  0001 C CNN
+	1    1700 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60E9690E
-P 2450 3550
+P 2000 1400
 AR Path="/60E9690E" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E9690E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2450 3300 50  0001 C CNN
-F 1 "GND" V 2455 3422 50  0000 R CNN
-F 2 "" H 2450 3550 50  0001 C CNN
-F 3 "" H 2450 3550 50  0001 C CNN
-	1    2450 3550
+F 0 "#PWR?" H 2000 1150 50  0001 C CNN
+F 1 "GND" V 2005 1272 50  0000 R CNN
+F 2 "" H 2000 1400 50  0001 C CNN
+F 3 "" H 2000 1400 50  0001 C CNN
+	1    2000 1400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 60E96914
-P 2450 3350
+P 2000 1200
 AR Path="/60E96914" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E96914" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2450 3200 50  0001 C CNN
-F 1 "+5V" V 2465 3478 50  0000 L CNN
-F 2 "" H 2450 3350 50  0001 C CNN
-F 3 "" H 2450 3350 50  0001 C CNN
-	1    2450 3350
+F 0 "#PWR?" H 2000 1050 50  0001 C CNN
+F 1 "+5V" V 2015 1328 50  0000 L CNN
+F 2 "" H 2000 1200 50  0001 C CNN
+F 3 "" H 2000 1200 50  0001 C CNN
+	1    2000 1200
 	0    1    1    0   
 $EndComp
-Text GLabel 2450 3450 2    50   Input ~ 0
+Text GLabel 2000 1300 2    50   Input ~ 0
 Mega-PB3
-Text GLabel 1950 3550 0    50   Input ~ 0
+Text GLabel 1500 1400 0    50   Input ~ 0
 Mega-RST
-Text GLabel 1950 3450 0    50   Input ~ 0
+Text GLabel 1500 1300 0    50   Input ~ 0
 Mega-PB5
-Text GLabel 1950 3350 0    50   Input ~ 0
+Text GLabel 1500 1200 0    50   Input ~ 0
 Mega-PB4
 $Comp
 L power:+5V #PWR?
 U 1 1 60E9691E
-P 9500 1750
+P 2550 4500
 AR Path="/60E9691E" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E9691E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9500 1600 50  0001 C CNN
-F 1 "+5V" H 9515 1923 50  0000 C CNN
-F 2 "" H 9500 1750 50  0001 C CNN
-F 3 "" H 9500 1750 50  0001 C CNN
-	1    9500 1750
-	-1   0    0    1   
+F 0 "#PWR?" H 2550 4350 50  0001 C CNN
+F 1 "+5V" H 2565 4673 50  0000 C CNN
+F 2 "" H 2550 4500 50  0001 C CNN
+F 3 "" H 2550 4500 50  0001 C CNN
+	1    2550 4500
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60E96924
-P 10350 1750
+P 3400 5150
 AR Path="/60E96924" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E96924" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10350 1500 50  0001 C CNN
-F 1 "GND" V 10355 1622 50  0000 R CNN
-F 2 "" H 10350 1750 50  0001 C CNN
-F 3 "" H 10350 1750 50  0001 C CNN
-	1    10350 1750
+F 0 "#PWR?" H 3400 4900 50  0001 C CNN
+F 1 "GND" V 3405 5022 50  0000 R CNN
+F 2 "" H 3400 5150 50  0001 C CNN
+F 3 "" H 3400 5150 50  0001 C CNN
+	1    3400 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9500 1450 9050 1450
-Wire Wire Line
-	9700 1450 9500 1450
-Connection ~ 9500 1450
 Wire Wire Line
 	9750 3550 9300 3550
 Wire Wire Line
@@ -397,9 +392,9 @@ Wire Wire Line
 Wire Wire Line
 	10050 3950 10350 3950
 Wire Wire Line
-	10350 1750 10350 1450
+	3400 5150 3400 5000
 Wire Wire Line
-	10100 1450 10350 1450
+	3150 5000 3400 5000
 $Comp
 L Switch:SW_Push SW?
 U 1 1 60EC9F93
@@ -514,7 +509,7 @@ Connection ~ 2750 6100
 Wire Wire Line
 	1900 6100 2450 6100
 Text Notes 1000 5850 0    50   ~ 0
-TEST Reset Circuit
+TEST Reset Circuit n-mos?\n
 Wire Notes Line
 	900  5650 900  7100
 Wire Notes Line
@@ -523,4 +518,11 @@ Wire Notes Line
 	4200 7100 4200 5650
 Wire Notes Line
 	4200 5650 900  5650
+Wire Wire Line
+	2100 5000 2550 5000
+Wire Wire Line
+	2550 4800 2550 5000
+Connection ~ 2550 5000
+Wire Wire Line
+	2550 5000 2750 5000
 $EndSCHEMATC

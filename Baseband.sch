@@ -21,7 +21,7 @@ Text GLabel 3950 2400 2    50   Output ~ 0
 Mega-PC0
 Text GLabel 9200 2500 2    50   Input ~ 0
 Mega-PB3
-Text GLabel 3850 5650 2    50   Input ~ 0
+Text GLabel 3800 6150 2    50   Input ~ 0
 Mega-PD3
 $Comp
 L Device:C_Polarized C?
@@ -158,46 +158,46 @@ Wire Wire Line
 $Comp
 L Device:Buzzer BZ?
 U 1 1 60EAC63B
-P 2850 5750
+P 2800 6250
 AR Path="/60EAC63B" Ref="BZ?"  Part="1" 
 AR Path="/60EA1C1F/60EAC63B" Ref="BZ?"  Part="1" 
-F 0 "BZ?" V 2808 5902 50  0000 L CNN
-F 1 "Buzzer" V 2899 5902 50  0000 L CNN
-F 2 "" V 2825 5850 50  0001 C CNN
-F 3 "~" V 2825 5850 50  0001 C CNN
-	1    2850 5750
+F 0 "BZ?" V 2758 6402 50  0000 L CNN
+F 1 "Buzzer" V 2849 6402 50  0000 L CNN
+F 2 "" V 2775 6350 50  0001 C CNN
+F 3 "~" V 2775 6350 50  0001 C CNN
+	1    2800 6250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 60EAC641
-P 3400 5650
+P 3350 6150
 AR Path="/60EAC641" Ref="R?"  Part="1" 
 AR Path="/60EA1C1F/60EAC641" Ref="R?"  Part="1" 
-F 0 "R?" V 3193 5650 50  0000 C CNN
-F 1 "1K" V 3284 5650 50  0000 C CNN
-F 2 "" V 3330 5650 50  0001 C CNN
-F 3 "~" H 3400 5650 50  0001 C CNN
-	1    3400 5650
+F 0 "R?" V 3143 6150 50  0000 C CNN
+F 1 "1K" V 3234 6150 50  0000 C CNN
+F 2 "" V 3280 6150 50  0001 C CNN
+F 3 "~" H 3350 6150 50  0001 C CNN
+	1    3350 6150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3550 5650 3850 5650
+	3500 6150 3800 6150
 Wire Wire Line
-	3250 5650 2950 5650
+	3200 6150 2900 6150
 Wire Wire Line
-	2750 5650 2350 5650
+	2700 6150 2300 6150
 $Comp
 L power:GND #PWR?
 U 1 1 60EAC64A
-P 2350 5650
+P 2300 6150
 AR Path="/60EAC64A" Ref="#PWR?"  Part="1" 
 AR Path="/60EA1C1F/60EAC64A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2350 5400 50  0001 C CNN
-F 1 "GND" H 2355 5477 50  0000 C CNN
-F 2 "" H 2350 5650 50  0001 C CNN
-F 3 "" H 2350 5650 50  0001 C CNN
-	1    2350 5650
+F 0 "#PWR?" H 2300 5900 50  0001 C CNN
+F 1 "GND" H 2305 5977 50  0000 C CNN
+F 2 "" H 2300 6150 50  0001 C CNN
+F 3 "" H 2300 6150 50  0001 C CNN
+	1    2300 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -335,11 +335,11 @@ F 3 "~" H 7500 2750 50  0001 C CNN
 	1    7500 2750
 	0    1    1    0   
 $EndComp
-Text Notes 1500 2050 0    50   ~ 0
+Text Notes 2500 1950 0    50   ~ 0
 Baseband Input (Needs Work)
-Text Notes 6650 2200 0    50   ~ 0
+Text Notes 8150 1950 0    50   ~ 0
 Baseband Output
-Text Notes 1300 5400 0    50   ~ 0
+Text Notes 2400 5800 0    50   ~ 0
 Baseband Monitor (via AT Command "M0/1")
 Wire Wire Line
 	2500 2700 2850 2700
@@ -348,12 +348,4 @@ Wire Wire Line
 	2850 2700 2850 3200
 Wire Wire Line
 	7800 2900 7800 2950
-Wire Notes Line
-	1250 5250 4550 5250
-Wire Notes Line
-	4550 5250 4550 6100
-Wire Notes Line
-	4550 6100 1250 6100
-Wire Notes Line
-	1250 6100 1250 5250
 $EndSCHEMATC

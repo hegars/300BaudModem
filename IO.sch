@@ -146,34 +146,34 @@ E&M-T
 Text GLabel 7000 4750 2    50   Output ~ 0
 RST_Request
 $Comp
-L Connector:AudioPlug4 J?
+L Connector:AudioPlug3 J?
 U 1 1 60EB32CF
-P 1850 1350
+P 1850 1400
 AR Path="/60EB32CF" Ref="J?"  Part="1" 
 AR Path="/60E9D9E5/60EB32CF" Ref="J?"  Part="1" 
-F 0 "J?" H 1907 1675 50  0000 C CNN
-F 1 "AudioPlug4" H 1907 1584 50  0000 C CNN
-F 2 "" H 2200 1250 50  0001 C CNN
-F 3 "~" H 2200 1250 50  0001 C CNN
-	1    1850 1350
+F 0 "J?" H 1907 1725 50  0000 C CNN
+F 1 "AudioPlug4" H 1907 1634 50  0000 C CNN
+F 2 "" H 2200 1300 50  0001 C CNN
+F 3 "~" H 2200 1300 50  0001 C CNN
+	1    1850 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60EB32D5
-P 2450 1250
+P 2450 1300
 AR Path="/60EB32D5" Ref="#PWR?"  Part="1" 
 AR Path="/60E9D9E5/60EB32D5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2450 1000 50  0001 C CNN
-F 1 "GND" V 2455 1122 50  0000 R CNN
-F 2 "" H 2450 1250 50  0001 C CNN
-F 3 "" H 2450 1250 50  0001 C CNN
-	1    2450 1250
+F 0 "#PWR?" H 2450 1050 50  0001 C CNN
+F 1 "GND" V 2455 1172 50  0000 R CNN
+F 2 "" H 2450 1300 50  0001 C CNN
+F 3 "" H 2450 1300 50  0001 C CNN
+	1    2450 1300
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2450 1550 2    50   Output ~ 0
+Text GLabel 2450 1500 2    50   Output ~ 0
 Baseband-OUT
-Text GLabel 2450 1450 2    50   Output ~ 0
+Text GLabel 2450 2400 2    50   Output ~ 0
 Signaling-OFFHOOK
 Wire Notes Line
 	3800 4250 3800 5800
@@ -184,34 +184,34 @@ Wire Notes Line
 Wire Notes Line
 	8000 4250 3800 4250
 $Comp
-L Connector:AudioPlug4 J?
+L Connector:AudioPlug3 J?
 U 1 1 60EE43AB
-P 5900 1350
+P 5900 1400
 AR Path="/60EE43AB" Ref="J?"  Part="1" 
 AR Path="/60E9D9E5/60EE43AB" Ref="J?"  Part="1" 
-F 0 "J?" H 5957 1675 50  0000 C CNN
-F 1 "AudioPlug4" H 5957 1584 50  0000 C CNN
-F 2 "" H 6250 1250 50  0001 C CNN
-F 3 "~" H 6250 1250 50  0001 C CNN
-	1    5900 1350
+F 0 "J?" H 5957 1725 50  0000 C CNN
+F 1 "AudioPlug4" H 5957 1634 50  0000 C CNN
+F 2 "" H 6250 1300 50  0001 C CNN
+F 3 "~" H 6250 1300 50  0001 C CNN
+	1    5900 1400
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60EE44F5
-P 5300 1250
+P 5300 1300
 AR Path="/60EE44F5" Ref="#PWR?"  Part="1" 
 AR Path="/60E9D9E5/60EE44F5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5300 1000 50  0001 C CNN
-F 1 "GND" V 5305 1122 50  0000 R CNN
-F 2 "" H 5300 1250 50  0001 C CNN
-F 3 "" H 5300 1250 50  0001 C CNN
-	1    5300 1250
+F 0 "#PWR?" H 5300 1050 50  0001 C CNN
+F 1 "GND" V 5305 1172 50  0000 R CNN
+F 2 "" H 5300 1300 50  0001 C CNN
+F 3 "" H 5300 1300 50  0001 C CNN
+	1    5300 1300
 	0    1    -1   0   
 $EndComp
-Text GLabel 5300 1550 0    50   Input ~ 0
+Text GLabel 5300 1400 0    50   Input ~ 0
 Baseband-IN
-Text GLabel 5300 1450 0    50   Input ~ 0
+Text GLabel 5300 2300 0    50   Input ~ 0
 Signaling-RINGDOWN
 Text Notes 3250 1000 0    50   ~ 0
 Crossover Cable Example
@@ -266,9 +266,9 @@ F 3 "" H 2450 2100 50  0001 C CNN
 	1    2450 2100
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5300 2400 0    50   Output ~ 0
+Text GLabel 5300 1500 0    50   Output ~ 0
 Baseband-OUT
-Text GLabel 5300 2300 0    50   Output ~ 0
+Text GLabel 5300 2400 0    50   Output ~ 0
 Signaling-OFFHOOK
 $Comp
 L Connector:AudioPlug4 J?
@@ -296,7 +296,7 @@ F 3 "" H 5300 2100 50  0001 C CNN
 	1    5300 2100
 	0    1    -1   0   
 $EndComp
-Text GLabel 2450 2400 2    50   Input ~ 0
+Text GLabel 2450 1400 2    50   Input ~ 0
 Baseband-IN
 Text GLabel 2450 2300 2    50   Input ~ 0
 Signaling-RINGDOWN
@@ -316,4 +316,34 @@ Wire Notes Line
 	5550 2600 5550 1900
 Wire Notes Line
 	2200 2600 2200 1900
+Text Notes 3800 1450 0    50   ~ 0
+X
+$Comp
+L power:GND #PWR?
+U 1 1 60ECC43D
+P 2450 2200
+AR Path="/60ECC43D" Ref="#PWR?"  Part="1" 
+AR Path="/60E9D9E5/60ECC43D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2450 1950 50  0001 C CNN
+F 1 "GND" V 2455 2072 50  0000 R CNN
+F 2 "" H 2450 2200 50  0001 C CNN
+F 3 "" H 2450 2200 50  0001 C CNN
+	1    2450 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60ECC77D
+P 5300 2200
+AR Path="/60ECC77D" Ref="#PWR?"  Part="1" 
+AR Path="/60E9D9E5/60ECC77D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5300 1950 50  0001 C CNN
+F 1 "GND" V 5305 2072 50  0000 R CNN
+F 2 "" H 5300 2200 50  0001 C CNN
+F 3 "" H 5300 2200 50  0001 C CNN
+	1    5300 2200
+	0    1    -1   0   
+$EndComp
+Text Notes 3800 2400 0    50   ~ 0
+X
 $EndSCHEMATC

@@ -270,8 +270,72 @@ F 3 "~" H 5000 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 4000 4450 4000
-Text GLabel 6750 4050 0    50   Input ~ 0
+Text GLabel 6400 4050 0    50   Input ~ 0
 E&M-R
-Text GLabel 6750 3850 0    50   Input ~ 0
+Text GLabel 6400 3850 0    50   Input ~ 0
 E&M-T
+$Comp
+L power:+5V #PWR?
+U 1 1 60E6E2DF
+P 4800 1600
+AR Path="/60E6E2DF" Ref="#PWR?"  Part="1" 
+AR Path="/60E9D9E5/60E6E2DF" Ref="#PWR?"  Part="1" 
+AR Path="/60E5C27B/60E6E2DF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4800 1450 50  0001 C CNN
+F 1 "+5V" V 4815 1728 50  0000 L CNN
+F 2 "" H 4800 1600 50  0001 C CNN
+F 3 "" H 4800 1600 50  0001 C CNN
+	1    4800 1600
+	0    1    1    0   
+$EndComp
+Text GLabel 1250 1550 2    50   Output ~ 0
+RST_Request
+Text GLabel 1250 2150 2    50   Input ~ 0
+I2C-SDA
+Text GLabel 1250 2050 2    50   Input ~ 0
+I2C-SDL
+$Comp
+L power:GND #PWR?
+U 1 1 60E6E2E8
+P 4800 1700
+AR Path="/60E6E2E8" Ref="#PWR?"  Part="1" 
+AR Path="/60E9D9E5/60E6E2E8" Ref="#PWR?"  Part="1" 
+AR Path="/60E5C27B/60E6E2E8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4800 1450 50  0001 C CNN
+F 1 "GND" V 4805 1572 50  0000 R CNN
+F 2 "" H 4800 1700 50  0001 C CNN
+F 3 "" H 4800 1700 50  0001 C CNN
+	1    4800 1700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1250 1750 2    50   Output ~ 0
+Signaling-RINGDOWN
+Text GLabel 1250 1850 2    50   Input ~ 0
+Signaling-OFFHOOK
+Text GLabel 3000 2000 0    50   Input ~ 0
+Baseband-OUT
+Text GLabel 3000 2100 0    50   Output ~ 0
+Baseband-IN
+Wire Notes Line
+	3000 1550 3000 2550
+Wire Notes Line
+	3000 2550 4800 2550
+Wire Notes Line
+	4800 2550 4800 1550
+Wire Notes Line
+	4800 1550 3000 1550
+Text Notes 3400 2100 0    50   ~ 0
+Baseband to PCM transcoder
+Text Label 4800 2300 0    50   ~ 0
+PCM0_DCLK
+Text Label 4800 2200 0    50   ~ 0
+PCM0_DOUT
+Text Label 4800 2100 0    50   ~ 0
+PCM0_DIN
+Text Label 4800 2000 0    50   ~ 0
+PCM0_DFSC
+Wire Wire Line
+	6400 4050 6750 4050
+Wire Wire Line
+	6750 3850 6400 3850
 $EndSCHEMATC

@@ -254,7 +254,7 @@ Text GLabel 8900 3950 0    50   Input ~ 0
 Mega-XTAL2
 Text Notes 8350 3800 0    50   ~ 0
 CLOCK
-Text Notes 1000 1000 0    50   ~ 0
+Text Notes 8500 1000 0    50   ~ 0
 ICSP
 $Comp
 L Device:C C?
@@ -303,49 +303,49 @@ Connection ~ 10350 3750
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?
 U 1 1 60E96908
-P 1700 1300
+P 9200 1300
 AR Path="/60E96908" Ref="J?"  Part="1" 
 AR Path="/60E76DCE/60E96908" Ref="J?"  Part="1" 
-F 0 "J?" H 1750 1617 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 1750 1526 50  0000 C CNN
-F 2 "" H 1700 1300 50  0001 C CNN
-F 3 "~" H 1700 1300 50  0001 C CNN
-	1    1700 1300
+F 0 "J?" H 9250 1617 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 9250 1526 50  0000 C CNN
+F 2 "" H 9200 1300 50  0001 C CNN
+F 3 "~" H 9200 1300 50  0001 C CNN
+	1    9200 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60E9690E
-P 2000 1400
+P 9500 1400
 AR Path="/60E9690E" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E9690E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2000 1150 50  0001 C CNN
-F 1 "GND" V 2005 1272 50  0000 R CNN
-F 2 "" H 2000 1400 50  0001 C CNN
-F 3 "" H 2000 1400 50  0001 C CNN
-	1    2000 1400
+F 0 "#PWR?" H 9500 1150 50  0001 C CNN
+F 1 "GND" V 9505 1272 50  0000 R CNN
+F 2 "" H 9500 1400 50  0001 C CNN
+F 3 "" H 9500 1400 50  0001 C CNN
+	1    9500 1400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 60E96914
-P 2000 1200
+P 9500 1200
 AR Path="/60E96914" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E96914" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2000 1050 50  0001 C CNN
-F 1 "+5V" V 2015 1328 50  0000 L CNN
-F 2 "" H 2000 1200 50  0001 C CNN
-F 3 "" H 2000 1200 50  0001 C CNN
-	1    2000 1200
+F 0 "#PWR?" H 9500 1050 50  0001 C CNN
+F 1 "+5V" V 9515 1328 50  0000 L CNN
+F 2 "" H 9500 1200 50  0001 C CNN
+F 3 "" H 9500 1200 50  0001 C CNN
+	1    9500 1200
 	0    1    1    0   
 $EndComp
-Text GLabel 2000 1300 2    50   Input ~ 0
+Text GLabel 9500 1300 2    50   Input ~ 0
 Mega-PB3
-Text GLabel 1500 1400 0    50   Input ~ 0
+Text GLabel 9000 1400 0    50   Input ~ 0
 Mega-RST
-Text GLabel 1500 1300 0    50   Input ~ 0
+Text GLabel 9000 1300 0    50   Input ~ 0
 Mega-PB5
-Text GLabel 1500 1200 0    50   Input ~ 0
+Text GLabel 9000 1200 0    50   Input ~ 0
 Mega-PB4
 $Comp
 L power:+5V #PWR?

@@ -236,15 +236,15 @@ Mega-nRST
 $Comp
 L Device:R R?
 U 1 1 60E968E7
-P 1600 6250
+P 1250 7100
 AR Path="/60E968E7" Ref="R?"  Part="1" 
 AR Path="/60E76DCE/60E968E7" Ref="R?"  Part="1" 
-F 0 "R?" H 1530 6204 50  0000 R CNN
-F 1 "1K" H 1530 6295 50  0000 R CNN
-F 2 "" V 1530 6250 50  0001 C CNN
-F 3 "~" H 1600 6250 50  0001 C CNN
-	1    1600 6250
-	-1   0    0    1   
+F 0 "R?" H 1180 7054 50  0000 R CNN
+F 1 "1K" H 1180 7145 50  0000 R CNN
+F 2 "" V 1180 7100 50  0001 C CNN
+F 3 "~" H 1250 7100 50  0001 C CNN
+	1    1250 7100
+	0    1    1    0   
 $EndComp
 Text Notes 700  6450 0    50   ~ 0
 Reset (Pullup)
@@ -252,7 +252,7 @@ Text GLabel 8900 3550 0    50   Input ~ 0
 Mega-XTAL1
 Text GLabel 8900 3950 0    50   Input ~ 0
 Mega-XTAL2
-Text Notes 8350 3800 0    50   ~ 0
+Text Notes 8300 3300 0    50   ~ 0
 CLOCK
 Text Notes 8500 1000 0    50   ~ 0
 ICSP
@@ -350,15 +350,15 @@ Mega-PB4
 $Comp
 L power:+5V #PWR?
 U 1 1 60E9691E
-P 1600 6100
+P 1100 7100
 AR Path="/60E9691E" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E9691E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1600 5950 50  0001 C CNN
-F 1 "+5V" H 1615 6273 50  0000 C CNN
-F 2 "" H 1600 6100 50  0001 C CNN
-F 3 "" H 1600 6100 50  0001 C CNN
-	1    1600 6100
-	1    0    0    -1  
+F 0 "#PWR?" H 1100 6950 50  0001 C CNN
+F 1 "+5V" H 1115 7273 50  0000 C CNN
+F 2 "" H 1100 7100 50  0001 C CNN
+F 3 "" H 1100 7100 50  0001 C CNN
+	1    1100 7100
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -394,7 +394,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 6600 2450 6600
 Wire Wire Line
-	1600 6400 1600 6600
+	1400 7100 1600 7100
 Connection ~ 1600 6600
 Wire Wire Line
 	1600 6600 1800 6600
@@ -462,4 +462,5 @@ Wire Wire Line
 	1600 6600 1300 6600
 Wire Wire Line
 	1600 7400 1300 7400
+Connection ~ 1600 7100
 $EndSCHEMATC

@@ -42,32 +42,6 @@ F 3 "~" V 2550 5625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 60EA1224
-P 6550 6100
-AR Path="/60EA1224" Ref="#PWR?"  Part="1" 
-AR Path="/60E9D9E5/60EA1224" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6550 5850 50  0001 C CNN
-F 1 "GND" V 6555 5972 50  0000 R CNN
-F 2 "" H 6550 6100 50  0001 C CNN
-F 3 "" H 6550 6100 50  0001 C CNN
-	1    6550 6100
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60EA122A
-P 7050 5200
-AR Path="/60EA122A" Ref="#PWR?"  Part="1" 
-AR Path="/60E9D9E5/60EA122A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7050 5050 50  0001 C CNN
-F 1 "+5V" V 7065 5328 50  0000 L CNN
-F 2 "" H 7050 5200 50  0001 C CNN
-F 3 "" H 7050 5200 50  0001 C CNN
-	1    7050 5200
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 60EA1230
 P 6550 5200
@@ -111,21 +85,8 @@ F 3 "~" H 6750 5600 50  0001 C CNN
 $EndComp
 Text Notes 4900 3650 0    50   ~ 0
 2xTRRS Module Interface\nBASEBAND
-Text GLabel 7050 5300 2    50   Output ~ 0
+Text GLabel 7050 5200 2    50   Output ~ 0
 RST_Request
-$Comp
-L Connector:AudioPlug3 J?
-U 1 1 60EB32CF
-P 3900 1250
-AR Path="/60EB32CF" Ref="J?"  Part="1" 
-AR Path="/60E9D9E5/60EB32CF" Ref="J?"  Part="1" 
-F 0 "J?" H 3957 1575 50  0000 C CNN
-F 1 "AudioPlug4" H 3957 1484 50  0000 C CNN
-F 2 "" H 4250 1150 50  0001 C CNN
-F 3 "~" H 4250 1150 50  0001 C CNN
-	1    3900 1250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60EB32D5
@@ -139,7 +100,7 @@ F 3 "" H 4500 1150 50  0001 C CNN
 	1    4500 1150
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4500 1350 2    50   Output ~ 0
+Text GLabel 4500 1450 2    50   Output ~ 0
 Baseband-OUT
 Text GLabel 4500 2250 2    50   Output ~ 0
 Signaling-OFFHOOK
@@ -149,19 +110,6 @@ Wire Notes Line
 	3850 6350 8050 6350
 Wire Notes Line
 	8050 6350 8050 4800
-$Comp
-L Connector:AudioPlug3 J?
-U 1 1 60EE43AB
-P 7950 1250
-AR Path="/60EE43AB" Ref="J?"  Part="1" 
-AR Path="/60E9D9E5/60EE43AB" Ref="J?"  Part="1" 
-F 0 "J?" H 8007 1575 50  0000 C CNN
-F 1 "AudioPlug4" H 8007 1484 50  0000 C CNN
-F 2 "" H 8300 1150 50  0001 C CNN
-F 3 "~" H 8300 1150 50  0001 C CNN
-	1    7950 1250
-	-1   0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60EE44F5
@@ -175,15 +123,15 @@ F 3 "" H 7350 1150 50  0001 C CNN
 	1    7350 1150
 	0    1    -1   0   
 $EndComp
-Text GLabel 7350 1250 0    50   Input ~ 0
+Text GLabel 7350 1450 0    50   Input ~ 0
 Baseband-IN
 Text GLabel 7350 2150 0    50   Input ~ 0
 Signaling-RINGDOWN
 Text Notes 5300 850  0    50   ~ 0
 Crossover Cable Example
-Text GLabel 7050 6000 2    50   Input ~ 0
-I2C-SDA
 Text GLabel 7050 5900 2    50   Input ~ 0
+I2C-SDA
+Text GLabel 7050 5800 2    50   Input ~ 0
 I2C-SDL
 $Comp
 L power:GND #PWR?
@@ -198,13 +146,13 @@ F 3 "" H 7050 6100 50  0001 C CNN
 	1    7050 6100
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7050 5500 2    50   Output ~ 0
+Text GLabel 7050 5400 2    50   Output ~ 0
 Signaling-RINGDOWN
-Text GLabel 7050 5800 2    50   Input ~ 0
-Signaling-OFFHOOK
 Text GLabel 7050 5700 2    50   Input ~ 0
+Signaling-OFFHOOK
+Text GLabel 7050 5600 2    50   Input ~ 0
 Baseband-OUT
-Text GLabel 7050 5600 2    50   Output ~ 0
+Text GLabel 7050 5500 2    50   Output ~ 0
 Baseband-IN
 $Comp
 L Connector:AudioPlug4 J?
@@ -262,14 +210,14 @@ F 3 "" H 7350 1950 50  0001 C CNN
 	1    7350 1950
 	0    1    -1   0   
 $EndComp
-Text GLabel 4500 1250 2    50   Input ~ 0
+Text GLabel 4500 1350 2    50   Input ~ 0
 Baseband-IN
 Text GLabel 4500 2150 2    50   Input ~ 0
 Signaling-RINGDOWN
 Wire Notes Line
 	4250 2450 7600 2450
 Wire Notes Line
-	4250 900  7600 900 
+	4250 950  7600 950 
 Wire Notes Line
 	4250 1600 7600 1600
 Wire Notes Line
@@ -326,32 +274,6 @@ F 3 "~" H 3900 3750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 60F6E687
-P 6550 4150
-AR Path="/60F6E687" Ref="#PWR?"  Part="1" 
-AR Path="/60E9D9E5/60F6E687" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6550 3900 50  0001 C CNN
-F 1 "GND" V 6555 4022 50  0000 R CNN
-F 2 "" H 6550 4150 50  0001 C CNN
-F 3 "" H 6550 4150 50  0001 C CNN
-	1    6550 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60F6E691
-P 7050 3250
-AR Path="/60F6E691" Ref="#PWR?"  Part="1" 
-AR Path="/60E9D9E5/60F6E691" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7050 3100 50  0001 C CNN
-F 1 "+5V" V 7065 3378 50  0000 L CNN
-F 2 "" H 7050 3250 50  0001 C CNN
-F 3 "" H 7050 3250 50  0001 C CNN
-	1    7050 3250
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 60F6E69B
 P 6550 3250
@@ -395,13 +317,13 @@ F 3 "~" H 6750 3650 50  0001 C CNN
 $EndComp
 Text Notes 5050 5650 0    50   ~ 0
 RJ45 Module Interface\nTELEPHONY
-Text GLabel 7050 3350 2    50   Output ~ 0
+Text GLabel 7050 3250 2    50   Output ~ 0
 RST_Request
 Wire Notes Line
 	8050 2800 3850 2800
-Text GLabel 7050 4050 2    50   Input ~ 0
-I2C-SDA
 Text GLabel 7050 3950 2    50   Input ~ 0
+I2C-SDA
+Text GLabel 7050 3850 2    50   Input ~ 0
 I2C-SDL
 $Comp
 L power:GND #PWR?
@@ -416,13 +338,13 @@ F 3 "" H 7050 4150 50  0001 C CNN
 	1    7050 4150
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7050 3550 2    50   Output ~ 0
+Text GLabel 7050 3450 2    50   Output ~ 0
 Signaling-RINGDOWN
-Text GLabel 7050 3850 2    50   Input ~ 0
-Signaling-OFFHOOK
 Text GLabel 7050 3750 2    50   Input ~ 0
+Signaling-OFFHOOK
+Text GLabel 7050 3650 2    50   Input ~ 0
 Baseband-OUT
-Text GLabel 7050 3650 2    50   Output ~ 0
+Text GLabel 7050 3550 2    50   Output ~ 0
 Baseband-IN
 $Comp
 L Connector:AudioJack4 J?
@@ -534,4 +456,56 @@ Wire Notes Line
 	3850 2800 3850 4500
 Wire Notes Line
 	8050 2800 8050 4500
+$Comp
+L Connector:AudioPlug4 J?
+U 1 1 60FDB7A8
+P 3900 1250
+AR Path="/60FDB7A8" Ref="J?"  Part="1" 
+AR Path="/60E9D9E5/60FDB7A8" Ref="J?"  Part="1" 
+F 0 "J?" H 3957 1575 50  0000 C CNN
+F 1 "AudioPlug4" H 3957 1484 50  0000 C CNN
+F 2 "" H 4250 1150 50  0001 C CNN
+F 3 "~" H 4250 1150 50  0001 C CNN
+	1    3900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioPlug4 J?
+U 1 1 60FDC067
+P 7950 1250
+AR Path="/60FDC067" Ref="J?"  Part="1" 
+AR Path="/60E9D9E5/60FDC067" Ref="J?"  Part="1" 
+F 0 "J?" H 8007 1575 50  0000 C CNN
+F 1 "AudioPlug4" H 8007 1484 50  0000 C CNN
+F 2 "" H 8300 1150 50  0001 C CNN
+F 3 "~" H 8300 1150 50  0001 C CNN
+	1    7950 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FE2765
+P 4500 1250
+AR Path="/60FE2765" Ref="#PWR?"  Part="1" 
+AR Path="/60E9D9E5/60FE2765" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4500 1000 50  0001 C CNN
+F 1 "GND" V 4505 1122 50  0000 R CNN
+F 2 "" H 4500 1250 50  0001 C CNN
+F 3 "" H 4500 1250 50  0001 C CNN
+	1    4500 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FE2987
+P 7350 1250
+AR Path="/60FE2987" Ref="#PWR?"  Part="1" 
+AR Path="/60E9D9E5/60FE2987" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7350 1000 50  0001 C CNN
+F 1 "GND" V 7355 1122 50  0000 R CNN
+F 2 "" H 7350 1250 50  0001 C CNN
+F 3 "" H 7350 1250 50  0001 C CNN
+	1    7350 1250
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC

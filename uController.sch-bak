@@ -406,7 +406,7 @@ Wire Wire Line
 	2450 6600 2450 7100
 Wire Wire Line
 	1600 7100 1800 7100
-Text Notes 850  5750 0    50   ~ 0
+Text Notes 700  6150 0    50   ~ 0
 Reset Circuit with digital select via p-mos select\n
 Wire Wire Line
 	2650 6600 2450 6600

@@ -554,19 +554,6 @@ F 3 "~" H 7850 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 60F16AD2
-P 7400 2300
-AR Path="/60F16AD2" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60F16AD2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7400 2150 50  0001 C CNN
-F 1 "+5V" V 7415 2428 50  0000 L CNN
-F 2 "" H 7400 2300 50  0001 C CNN
-F 3 "" H 7400 2300 50  0001 C CNN
-	1    7400 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 60F17664
 P 8150 3950
@@ -577,7 +564,7 @@ F 1 "GND" V 8155 3822 50  0000 R CNN
 F 2 "" H 8150 3950 50  0001 C CNN
 F 3 "" H 8150 3950 50  0001 C CNN
 	1    8150 3950
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7400 2450 7550 2450
@@ -712,12 +699,9 @@ F 3 "" H 6450 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7400 2300 7400 2450
-Wire Wire Line
 	7400 2450 7400 3550
 Wire Wire Line
 	7400 3550 7650 3550
-Connection ~ 7400 2450
 Wire Wire Line
 	7650 3650 7350 3650
 Wire Wire Line
@@ -768,4 +752,18 @@ Wire Wire Line
 	8550 4300 8850 4300
 Text Notes 3650 4950 0    50   ~ 0
 Outboard Connector
+$Comp
+L power:+5V #PWR?
+U 1 1 60F16AD2
+P 7650 3550
+AR Path="/60F16AD2" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F16AD2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7650 3400 50  0001 C CNN
+F 1 "+5V" V 7665 3678 50  0000 L CNN
+F 2 "" H 7650 3550 50  0001 C CNN
+F 3 "" H 7650 3550 50  0001 C CNN
+	1    7650 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 3550
 $EndSCHEMATC

@@ -398,11 +398,7 @@ RJ45 Module Interface\nTELEPHONY
 Text GLabel 7050 3350 2    50   Output ~ 0
 RST_Request
 Wire Notes Line
-	3850 2850 3850 4400
-Wire Notes Line
-	8050 4400 8050 2850
-Wire Notes Line
-	8050 2850 3850 2850
+	8050 2800 3850 2800
 Text GLabel 7050 4050 2    50   Input ~ 0
 I2C-SDA
 Text GLabel 7050 3950 2    50   Input ~ 0
@@ -483,7 +479,7 @@ F 3 "~" H 2450 3100 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Notes Line
-	3850 4400 8050 4400
+	3850 4500 8050 4500
 Wire Notes Line
 	8050 4800 3850 4800
 Wire Wire Line
@@ -534,4 +530,8 @@ Wire Wire Line
 	3300 4050 3300 4400
 Wire Wire Line
 	3300 4400 2650 4400
+Wire Notes Line
+	3850 2800 3850 4500
+Wire Notes Line
+	8050 2800 8050 4500
 $EndSCHEMATC

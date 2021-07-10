@@ -64,7 +64,7 @@ Text GLabel 6150 4900 2    50   Input ~ 0
 TTL-TX
 Text GLabel 6150 4800 2    50   Input ~ 0
 TTL-RX
-Text GLabel 6150 5850 2    50   Input ~ 0
+Text GLabel 6150 5800 2    50   Input ~ 0
 TTL-DCD
 Text GLabel 6150 5000 2    50   Input ~ 0
 TTL-RI
@@ -221,32 +221,32 @@ $EndComp
 $Comp
 L Switch:SW_Push SW?
 U 1 1 60E968E0
-P 2600 4150
+P 2000 6600
 AR Path="/60E968E0" Ref="SW?"  Part="1" 
 AR Path="/60E76DCE/60E968E0" Ref="SW?"  Part="1" 
-F 0 "SW?" H 2600 4435 50  0000 C CNN
-F 1 "SW_Push" H 2600 4344 50  0000 C CNN
-F 2 "" H 2600 4350 50  0001 C CNN
-F 3 "~" H 2600 4350 50  0001 C CNN
-	1    2600 4150
+F 0 "SW?" H 2000 6885 50  0000 C CNN
+F 1 "SW_Push" H 2000 6794 50  0000 C CNN
+F 2 "" H 2000 6800 50  0001 C CNN
+F 3 "~" H 2000 6800 50  0001 C CNN
+	1    2000 6600
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 4150 0    50   Input ~ 0
+Text GLabel 1300 6600 0    50   Input ~ 0
 Mega-nRST
 $Comp
 L Device:R R?
 U 1 1 60E968E7
-P 2200 3800
+P 1600 6250
 AR Path="/60E968E7" Ref="R?"  Part="1" 
 AR Path="/60E76DCE/60E968E7" Ref="R?"  Part="1" 
-F 0 "R?" H 2130 3754 50  0000 R CNN
-F 1 "1K" H 2130 3845 50  0000 R CNN
-F 2 "" V 2130 3800 50  0001 C CNN
-F 3 "~" H 2200 3800 50  0001 C CNN
-	1    2200 3800
+F 0 "R?" H 1530 6204 50  0000 R CNN
+F 1 "1K" H 1530 6295 50  0000 R CNN
+F 2 "" V 1530 6250 50  0001 C CNN
+F 3 "~" H 1600 6250 50  0001 C CNN
+	1    1600 6250
 	-1   0    0    1   
 $EndComp
-Text Notes 1200 3950 0    50   ~ 0
+Text Notes 700  6450 0    50   ~ 0
 Reset (Pullup)
 Text GLabel 8900 3550 0    50   Input ~ 0
 Mega-XTAL1
@@ -350,28 +350,28 @@ Mega-PB4
 $Comp
 L power:+5V #PWR?
 U 1 1 60E9691E
-P 2200 3650
+P 1600 6100
 AR Path="/60E9691E" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E9691E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2200 3500 50  0001 C CNN
-F 1 "+5V" H 2215 3823 50  0000 C CNN
-F 2 "" H 2200 3650 50  0001 C CNN
-F 3 "" H 2200 3650 50  0001 C CNN
-	1    2200 3650
+F 0 "#PWR?" H 1600 5950 50  0001 C CNN
+F 1 "+5V" H 1615 6273 50  0000 C CNN
+F 2 "" H 1600 6100 50  0001 C CNN
+F 3 "" H 1600 6100 50  0001 C CNN
+	1    1600 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60E96924
-P 3050 4300
+P 2650 6600
 AR Path="/60E96924" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E96924" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3050 4050 50  0001 C CNN
-F 1 "GND" V 3055 4172 50  0000 R CNN
-F 2 "" H 3050 4300 50  0001 C CNN
-F 3 "" H 3050 4300 50  0001 C CNN
-	1    3050 4300
-	1    0    0    -1  
+F 0 "#PWR?" H 2650 6350 50  0001 C CNN
+F 1 "GND" V 2655 6472 50  0000 R CNN
+F 2 "" H 2650 6600 50  0001 C CNN
+F 3 "" H 2650 6600 50  0001 C CNN
+	1    2650 6600
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	9750 3550 9300 3550
@@ -392,137 +392,74 @@ Wire Wire Line
 Wire Wire Line
 	10050 3950 10350 3950
 Wire Wire Line
-	3050 4300 3050 4150
+	2200 6600 2450 6600
 Wire Wire Line
-	2800 4150 3050 4150
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60EC9F93
-P 2950 6100
-AR Path="/60EC9F93" Ref="SW?"  Part="1" 
-AR Path="/60E76DCE/60EC9F93" Ref="SW?"  Part="1" 
-F 0 "SW?" H 2950 6385 50  0000 C CNN
-F 1 "SW_Push" H 2950 6294 50  0000 C CNN
-F 2 "" H 2950 6300 50  0001 C CNN
-F 3 "~" H 2950 6300 50  0001 C CNN
-	1    2950 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Polarized C?
-U 1 1 60EC9F99
-P 3550 6100
-AR Path="/60EC9F99" Ref="C?"  Part="1" 
-AR Path="/60E76DCE/60EC9F99" Ref="C?"  Part="1" 
-F 0 "C?" V 3295 6100 50  0000 C CNN
-F 1 "100u" V 3386 6100 50  0000 C CNN
-F 2 "" H 3588 5950 50  0001 C CNN
-F 3 "~" H 3550 6100 50  0001 C CNN
-	1    3550 6100
-	0    1    1    0   
-$EndComp
-Text GLabel 1900 6100 0    50   Input ~ 0
-Mega-nRST
-$Comp
-L power:+5V #PWR?
-U 1 1 60EC9FA0
-P 3700 6100
-AR Path="/60EC9FA0" Ref="#PWR?"  Part="1" 
-AR Path="/60E76DCE/60EC9FA0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3700 5950 50  0001 C CNN
-F 1 "+5V" V 3715 6228 50  0000 L CNN
-F 2 "" H 3700 6100 50  0001 C CNN
-F 3 "" H 3700 6100 50  0001 C CNN
-	1    3700 6100
-	0    1    1    0   
-$EndComp
+	1600 6400 1600 6600
+Connection ~ 1600 6600
+Wire Wire Line
+	1600 6600 1800 6600
+Wire Wire Line
+	1600 6600 1600 7100
+Text GLabel 1300 7400 0    50   Input ~ 0
+RST_Request
+Wire Wire Line
+	2450 6600 2450 7100
+Wire Wire Line
+	1600 7100 1800 7100
+Text Notes 850  5750 0    50   ~ 0
+Reset Circuit with digital select via p-mos select\n
+Wire Wire Line
+	2650 6600 2450 6600
+Connection ~ 2450 6600
 $Comp
 L Device:R R?
-U 1 1 60EC9FA6
-P 2600 6100
-AR Path="/60EC9FA6" Ref="R?"  Part="1" 
-AR Path="/60E76DCE/60EC9FA6" Ref="R?"  Part="1" 
-F 0 "R?" V 2393 6100 50  0000 C CNN
-F 1 "220" V 2484 6100 50  0000 C CNN
-F 2 "" V 2530 6100 50  0001 C CNN
-F 3 "~" H 2600 6100 50  0001 C CNN
-	1    2600 6100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 60EC9FAC
-P 3400 6700
-AR Path="/60EC9FAC" Ref="R?"  Part="1" 
-AR Path="/60E76DCE/60EC9FAC" Ref="R?"  Part="1" 
-F 0 "R?" H 3330 6654 50  0000 R CNN
-F 1 "10K" H 3330 6745 50  0000 R CNN
-F 2 "" V 3330 6700 50  0001 C CNN
-F 3 "~" H 3400 6700 50  0001 C CNN
-	1    3400 6700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Q_PMOS_SDG Q?
-U 1 1 60EC9FB2
-P 2950 6650
-AR Path="/60EC9FB2" Ref="Q?"  Part="1" 
-AR Path="/60E76DCE/60EC9FB2" Ref="Q?"  Part="1" 
-F 0 "Q?" V 3292 6650 50  0000 C CNN
-F 1 "Q_PMOS_SDG" V 3201 6650 50  0000 C CNN
-F 2 "" H 3150 6750 50  0001 C CNN
-F 3 "~" H 2950 6650 50  0001 C CNN
-	1    2950 6650
+U 1 1 60EC31D3
+P 1750 7400
+AR Path="/60EC31D3" Ref="R?"  Part="1" 
+AR Path="/60E76DCE/60EC31D3" Ref="R?"  Part="1" 
+F 0 "R?" H 1680 7354 50  0000 R CNN
+F 1 "1K" H 1680 7445 50  0000 R CNN
+F 2 "" V 1680 7400 50  0001 C CNN
+F 3 "~" H 1750 7400 50  0001 C CNN
+	1    1750 7400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3400 6550 3400 6100
-Wire Wire Line
-	2950 6850 2500 6850
-Connection ~ 2950 6850
-Wire Wire Line
-	3150 6550 3150 6100
+	2200 7100 2450 7100
 $Comp
-L 74xx:74LS14 U?
-U 1 1 60EC9FBC
-P 2200 6850
-AR Path="/60EC9FBC" Ref="U?"  Part="1" 
-AR Path="/60E76DCE/60EC9FBC" Ref="U?"  Part="1" 
-F 0 "U?" H 2200 7167 50  0000 C CNN
-F 1 "74LS14" H 2200 7076 50  0000 C CNN
-F 2 "" H 2200 6850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 2200 6850 50  0001 C CNN
-	1    2200 6850
-	1    0    0    -1  
+L Device:R R?
+U 1 1 60EC4332
+P 2300 7400
+AR Path="/60EC4332" Ref="R?"  Part="1" 
+AR Path="/60E76DCE/60EC4332" Ref="R?"  Part="1" 
+F 0 "R?" H 2230 7354 50  0000 R CNN
+F 1 "1K" H 2230 7445 50  0000 R CNN
+F 2 "" V 2230 7400 50  0001 C CNN
+F 3 "~" H 2300 7400 50  0001 C CNN
+	1    2300 7400
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2950 6850 3400 6850
+	2450 7100 2450 7400
+Connection ~ 2450 7100
 Wire Wire Line
-	3150 6100 3400 6100
-Connection ~ 3150 6100
-Connection ~ 3400 6100
-Text GLabel 1900 6850 0    50   Input ~ 0
-RST_Request
+	1900 7400 2000 7400
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 60ECA576
+P 2000 7200
+F 0 "Q?" V 2342 7200 50  0000 C CNN
+F 1 "Q_NMOS_DGS" V 2251 7200 50  0000 C CNN
+F 2 "" H 2200 7300 50  0001 C CNN
+F 3 "~" H 2000 7200 50  0001 C CNN
+	1    2000 7200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2000 7400
 Wire Wire Line
-	2750 6550 2750 6100
-Connection ~ 2750 6100
+	2000 7400 2150 7400
 Wire Wire Line
-	1900 6100 2450 6100
-Text Notes 1000 5850 0    50   ~ 0
-TEST Reset Circuit n-mos?\n
-Wire Notes Line
-	900  5650 900  7100
-Wire Notes Line
-	900  7100 4200 7100
-Wire Notes Line
-	4200 7100 4200 5650
-Wire Notes Line
-	4200 5650 900  5650
+	1600 6600 1300 6600
 Wire Wire Line
-	1750 4150 2200 4150
-Wire Wire Line
-	2200 3950 2200 4150
-Connection ~ 2200 4150
-Wire Wire Line
-	2200 4150 2400 4150
+	1600 7400 1300 7400
 $EndSCHEMATC

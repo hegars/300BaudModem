@@ -508,4 +508,74 @@ F 3 "" H 7350 1250 50  0001 C CNN
 	1    7350 1250
 	0    1    -1   0   
 $EndComp
+$Comp
+L Connector:AudioPlug3 J?
+U 1 1 6101043E
+P 9800 4950
+F 0 "J?" H 9270 4904 50  0000 R CNN
+F 1 "AudioPlug3" H 9270 4995 50  0000 R CNN
+F 2 "" H 9900 4900 50  0001 C CNN
+F 3 "~" H 9900 4900 50  0001 C CNN
+	1    9800 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioPlug3 J?
+U 1 1 61011A7F
+P 9800 5750
+F 0 "J?" H 9270 5704 50  0000 R CNN
+F 1 "AudioPlug3" H 9270 5795 50  0000 R CNN
+F 2 "" H 9900 5700 50  0001 C CNN
+F 3 "~" H 9900 5700 50  0001 C CNN
+	1    9800 5750
+	-1   0    0    1   
+$EndComp
+Text Notes 8900 4400 0    50   ~ 0
+Kenwood 2-Pin
+Wire Notes Line
+	8650 4200 8650 6350
+Wire Notes Line
+	8650 6350 10900 6350
+Wire Notes Line
+	10900 6350 10900 4200
+Wire Notes Line
+	10900 4200 8650 4200
+Text GLabel 9200 4950 0    50   Input ~ 0
+KW-PROG
+$Comp
+L power:GND #PWR?
+U 1 1 61017F92
+P 9200 5050
+AR Path="/61017F92" Ref="#PWR?"  Part="1" 
+AR Path="/60E9D9E5/61017F92" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9200 4800 50  0001 C CNN
+F 1 "GND" V 9205 4922 50  0000 R CNN
+F 2 "" H 9200 5050 50  0001 C CNN
+F 3 "" H 9200 5050 50  0001 C CNN
+	1    9200 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 610186A8
+P 9200 5650
+AR Path="/610186A8" Ref="#PWR?"  Part="1" 
+AR Path="/60E9D9E5/610186A8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9200 5500 50  0001 C CNN
+F 1 "+5V" V 9215 5778 50  0000 L CNN
+F 2 "" H 9200 5650 50  0001 C CNN
+F 3 "" H 9200 5650 50  0001 C CNN
+	1    9200 5650
+	0    -1   -1   0   
+$EndComp
+Text Notes 9550 5500 0    50   ~ 0
+3.5mm
+Text Notes 9550 4700 0    50   ~ 0
+2.5mm
+Text GLabel 9200 4850 0    50   Input ~ 0
+KW-SPK
+Text GLabel 9200 5750 0    50   Input ~ 0
+KW-MIC
+Text GLabel 9200 5850 0    50   Input ~ 0
+KW-PTT
 $EndSCHEMATC

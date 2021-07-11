@@ -201,11 +201,11 @@ Wire Wire Line
 	7000 3400 7000 4000
 Wire Wire Line
 	7000 4000 6800 4000
-Text Notes 3000 1500 0    50   ~ 0
+Text Notes 3000 1600 0    50   ~ 0
 4-Wire Transmit
-Text Notes 6950 1500 0    50   ~ 0
+Text Notes 6900 1600 0    50   ~ 0
 4-Wire Receive
-Text Notes 4850 6500 0    50   ~ 0
+Text Notes 4800 6500 0    50   ~ 0
 2-Wire Transmit/Receive
 Wire Wire Line
 	7400 2500 7400 2700

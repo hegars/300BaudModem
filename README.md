@@ -1,5 +1,5 @@
 # 300 Baud Audio FSK Modem
- Hardware platform for a 300 Baud Audio FSK Modem with dual TRS output for baseband audio/signaling for radio operation and an RJ45 E&M Type connector. 
+ Hardware platform for a 300 Baud Audio FSK Modem with dual TRS output for baseband audio/signaling for radio operation and a RJ45 E&M Type connector. 
 
  Board format follows the RetroBrew Eurocard 160x100 style (for power right now) so it can either be rail mounted or desktop chassis with a v-scored breakoff for LED indicators.
 

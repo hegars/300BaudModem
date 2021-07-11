@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 11
+Sheet 6 12
 Title "300 Baud Audio FSK Modem "
 Date "2021-07-08"
 Rev "0.1"
@@ -129,9 +129,9 @@ Text GLabel 7350 2150 0    50   Input ~ 0
 Signaling-RINGDOWN
 Text Notes 5300 850  0    50   ~ 0
 Crossover Cable Example
-Text GLabel 7050 5900 2    50   Input ~ 0
+Text GLabel 7050 6000 2    50   Input ~ 0
 I2C-SDA
-Text GLabel 7050 5800 2    50   Input ~ 0
+Text GLabel 7050 5900 2    50   Input ~ 0
 I2C-SDL
 $Comp
 L power:GND #PWR?
@@ -321,9 +321,9 @@ Text GLabel 7050 3250 2    50   Output ~ 0
 RST_Request
 Wire Notes Line
 	8050 2800 3850 2800
-Text GLabel 7050 3950 2    50   Input ~ 0
+Text GLabel 7050 4050 2    50   Input ~ 0
 I2C-SDA
-Text GLabel 7050 3850 2    50   Input ~ 0
+Text GLabel 7050 3950 2    50   Input ~ 0
 I2C-SDL
 $Comp
 L power:GND #PWR?

@@ -1,5 +1,9 @@
 # 300 Baud Audio FSK Modem
- 300 Baud Audio FSK Modem with dual TRS connectors with signaling for radio operation, E&M and Hybrid Tel interface module options, on a Eurocard 160x100 card(for power right now) for either rail mount or desktop chassis running the "Arduino Bell 103 and ITU V.21 modem" https://github.com/cstroie/Arabell300 
+ Hardware platform for a 300 Baud Audio FSK Modem with dual TRS output for baseband audio/signaling for radio operation and an RJ45 E&M Type connector. 
+
+ Board format follows the RetroBrew Eurocard 160x100 style (for power right now) so it can either be rail mounted or desktop chassis 
+
+ Modem Core running on a Atmel ATMEGA328-P running the "Arduino Bell 103 and ITU V.21 modem" https://github.com/cstroie/Arabell300 
 
  ![main](/images/main.png)
  ![main](/images/face.png)
@@ -21,6 +25,8 @@ Features
 * Barrel Jack/5V DC Linear Regulator
 * Interface for WIFI Modem (https://github.com/bozimmerman/Zimodem)
 * I2C Expander? 16bit MCP23017
+* External "Data Access Arrangement" Modules
+* MCU/Data Pump/DAA?
 
 RetreoBrew Interface (https://www.retrobrewcomputers.org/doku.php?id=boards:ecb:start)
 * DIN41612 3x32pin

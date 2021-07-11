@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 8 12
 Title "300 Baud Audio FSK Modem "
 Date "2021-07-08"
 Rev "0.1"
@@ -13,313 +13,69 @@ Comment2 "https://github.com/hegars/300BaudModem"
 Comment3 "SOFTWARE: https://github.com/cstroie/Arabell300"
 Comment4 ""
 $EndDescr
-Text GLabel 4300 2900 2    50   Input ~ 0
+Text GLabel 2500 2250 0    50   Input ~ 0
 Mega-PB0
-Text GLabel 4300 3250 2    50   Input ~ 0
+Text GLabel 4300 2200 0    50   Input ~ 0
 Mega-PB1
-Text GLabel 4300 3600 2    50   Input ~ 0
+Text GLabel 2450 3650 0    50   Input ~ 0
 Mega-PB2
-Text GLabel 4300 3950 2    50   Input ~ 0
-Mega-PB4
-Text GLabel 4300 4300 2    50   Input ~ 0
+Text GLabel 4300 3650 0    50   Input ~ 0
 Mega-PB5
 $Comp
 L Device:R R?
-U 1 1 60EBEBA2
-P 4150 4300
-AR Path="/60EBEBA2" Ref="R?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBA2" Ref="R?"  Part="1" 
-F 0 "R?" V 3943 4300 50  0000 C CNN
-F 1 "1K" V 4034 4300 50  0000 C CNN
-F 2 "" V 4080 4300 50  0001 C CNN
-F 3 "~" H 4150 4300 50  0001 C CNN
-	1    4150 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 60EBEBA8
-P 4150 3950
-AR Path="/60EBEBA8" Ref="R?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBA8" Ref="R?"  Part="1" 
-F 0 "R?" V 3943 3950 50  0000 C CNN
-F 1 "1K" V 4034 3950 50  0000 C CNN
-F 2 "" V 4080 3950 50  0001 C CNN
-F 3 "~" H 4150 3950 50  0001 C CNN
-	1    4150 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 60EBEBAE
-P 4150 3600
-AR Path="/60EBEBAE" Ref="R?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBAE" Ref="R?"  Part="1" 
-F 0 "R?" V 3943 3600 50  0000 C CNN
-F 1 "1K" V 4034 3600 50  0000 C CNN
-F 2 "" V 4080 3600 50  0001 C CNN
-F 3 "~" H 4150 3600 50  0001 C CNN
-	1    4150 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 60EBEBB4
-P 4150 3250
-AR Path="/60EBEBB4" Ref="R?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBB4" Ref="R?"  Part="1" 
-F 0 "R?" V 3943 3250 50  0000 C CNN
-F 1 "1K" V 4034 3250 50  0000 C CNN
-F 2 "" V 4080 3250 50  0001 C CNN
-F 3 "~" H 4150 3250 50  0001 C CNN
-	1    4150 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 60EBEBBA
-P 4150 2900
-AR Path="/60EBEBBA" Ref="R?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBBA" Ref="R?"  Part="1" 
-F 0 "R?" V 3943 2900 50  0000 C CNN
-F 1 "1K" V 4034 2900 50  0000 C CNN
-F 2 "" V 4080 2900 50  0001 C CNN
-F 3 "~" H 4150 2900 50  0001 C CNN
-	1    4150 2900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60EBEBC0
-P 3850 2900
-AR Path="/60EBEBC0" Ref="D?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBC0" Ref="D?"  Part="1" 
-F 0 "D?" H 3843 3117 50  0000 C CNN
-F 1 "RX" H 3843 3026 50  0000 C CNN
-F 2 "" H 3850 2900 50  0001 C CNN
-F 3 "~" H 3850 2900 50  0001 C CNN
-	1    3850 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60EBEBC6
-P 3850 3250
-AR Path="/60EBEBC6" Ref="D?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBC6" Ref="D?"  Part="1" 
-F 0 "D?" H 3843 3467 50  0000 C CNN
-F 1 "TX" H 3843 3376 50  0000 C CNN
-F 2 "" H 3850 3250 50  0001 C CNN
-F 3 "~" H 3850 3250 50  0001 C CNN
-	1    3850 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60EBEBCC
-P 3850 3600
-AR Path="/60EBEBCC" Ref="D?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBCC" Ref="D?"  Part="1" 
-F 0 "D?" H 3843 3817 50  0000 C CNN
-F 1 "CD" H 3843 3726 50  0000 C CNN
-F 2 "" H 3850 3600 50  0001 C CNN
-F 3 "~" H 3850 3600 50  0001 C CNN
-	1    3850 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60EBEBD2
-P 3850 3950
-AR Path="/60EBEBD2" Ref="D?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBD2" Ref="D?"  Part="1" 
-F 0 "D?" H 3843 4167 50  0000 C CNN
-F 1 "OH" H 3843 4076 50  0000 C CNN
-F 2 "" H 3850 3950 50  0001 C CNN
-F 3 "~" H 3850 3950 50  0001 C CNN
-	1    3850 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60EBEBD8
-P 3850 4300
-AR Path="/60EBEBD8" Ref="D?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBD8" Ref="D?"  Part="1" 
-F 0 "D?" H 3843 4517 50  0000 C CNN
-F 1 "RI" H 3843 4426 50  0000 C CNN
-F 2 "" H 3850 4300 50  0001 C CNN
-F 3 "~" H 3850 4300 50  0001 C CNN
-	1    3850 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60EBEBDE
-P 3700 4300
-AR Path="/60EBEBDE" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBDE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3700 4050 50  0001 C CNN
-F 1 "GND" V 3705 4172 50  0000 R CNN
-F 2 "" H 3700 4300 50  0001 C CNN
-F 3 "" H 3700 4300 50  0001 C CNN
-	1    3700 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60EBEBE4
-P 3700 3950
-AR Path="/60EBEBE4" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBE4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3700 3700 50  0001 C CNN
-F 1 "GND" V 3705 3822 50  0000 R CNN
-F 2 "" H 3700 3950 50  0001 C CNN
-F 3 "" H 3700 3950 50  0001 C CNN
-	1    3700 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60EBEBEA
-P 3700 3600
-AR Path="/60EBEBEA" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBEA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3700 3350 50  0001 C CNN
-F 1 "GND" V 3705 3472 50  0000 R CNN
-F 2 "" H 3700 3600 50  0001 C CNN
-F 3 "" H 3700 3600 50  0001 C CNN
-	1    3700 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60EBEBF0
-P 3700 3250
-AR Path="/60EBEBF0" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBF0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3700 3000 50  0001 C CNN
-F 1 "GND" V 3705 3122 50  0000 R CNN
-F 2 "" H 3700 3250 50  0001 C CNN
-F 3 "" H 3700 3250 50  0001 C CNN
-	1    3700 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60EBEBF6
-P 3700 2900
-AR Path="/60EBEBF6" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EBEBF6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3700 2650 50  0001 C CNN
-F 1 "GND" V 3705 2772 50  0000 R CNN
-F 2 "" H 3700 2900 50  0001 C CNN
-F 3 "" H 3700 2900 50  0001 C CNN
-	1    3700 2900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 60EBEBFC
-P 4150 2550
+P 3800 1450
 AR Path="/60EBEBFC" Ref="R?"  Part="1" 
 AR Path="/60EBA1DA/60EBEBFC" Ref="R?"  Part="1" 
-F 0 "R?" V 3943 2550 50  0000 C CNN
-F 1 "1K" V 4034 2550 50  0000 C CNN
-F 2 "" V 4080 2550 50  0001 C CNN
-F 3 "~" H 4150 2550 50  0001 C CNN
-	1    4150 2550
+F 0 "R?" V 3593 1450 50  0000 C CNN
+F 1 "1K" V 3684 1450 50  0000 C CNN
+F 2 "" V 3730 1450 50  0001 C CNN
+F 3 "~" H 3800 1450 50  0001 C CNN
+	1    3800 1450
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 60EBEC02
-P 3850 2550
+P 3500 1450
 AR Path="/60EBEC02" Ref="D?"  Part="1" 
 AR Path="/60EBA1DA/60EBEC02" Ref="D?"  Part="1" 
-F 0 "D?" H 3843 2767 50  0000 C CNN
-F 1 "PWR" H 3843 2676 50  0000 C CNN
-F 2 "" H 3850 2550 50  0001 C CNN
-F 3 "~" H 3850 2550 50  0001 C CNN
-	1    3850 2550
+F 0 "D?" H 3493 1667 50  0000 C CNN
+F 1 "PWR" H 3493 1576 50  0000 C CNN
+F 2 "" H 3500 1450 50  0001 C CNN
+F 3 "~" H 3500 1450 50  0001 C CNN
+	1    3500 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60EBEC08
-P 3700 2550
+P 3350 1450
 AR Path="/60EBEC08" Ref="#PWR?"  Part="1" 
 AR Path="/60EBA1DA/60EBEC08" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3700 2300 50  0001 C CNN
-F 1 "GND" V 3705 2422 50  0000 R CNN
-F 2 "" H 3700 2550 50  0001 C CNN
-F 3 "" H 3700 2550 50  0001 C CNN
-	1    3700 2550
+F 0 "#PWR?" H 3350 1200 50  0001 C CNN
+F 1 "GND" V 3355 1322 50  0000 R CNN
+F 2 "" H 3350 1450 50  0001 C CNN
+F 3 "" H 3350 1450 50  0001 C CNN
+	1    3350 1450
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60EBEC0E
-P 3850 5200
-AR Path="/60EBEC0E" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EBEC0E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3850 5050 50  0001 C CNN
-F 1 "+5V" V 3865 5328 50  0000 L CNN
-F 2 "" H 3850 5200 50  0001 C CNN
-F 3 "" H 3850 5200 50  0001 C CNN
-	1    3850 5200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
-U 1 1 60EF665D
-P 4050 5400
-F 0 "J?" H 4100 5817 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 4100 5726 50  0000 C CNN
-F 2 "" H 4050 5400 50  0001 C CNN
-F 3 "~" H 4050 5400 50  0001 C CNN
-	1    4050 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60EF8D80
-P 4350 5600
-AR Path="/60EF8D80" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EF8D80" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4350 5350 50  0001 C CNN
-F 1 "GND" V 4355 5472 50  0000 R CNN
-F 2 "" H 4350 5600 50  0001 C CNN
-F 3 "" H 4350 5600 50  0001 C CNN
-	1    4350 5600
-	0    -1   -1   0   
-$EndComp
-Text GLabel 4350 5200 2    50   Input ~ 0
-Mega-PB0
-Text GLabel 3850 5300 0    50   Input ~ 0
-Mega-PB1
-Text GLabel 4350 5300 2    50   Input ~ 0
-Mega-PB2
-Text GLabel 3850 5400 0    50   Input ~ 0
-Mega-PB4
-Text GLabel 4350 5400 2    50   Input ~ 0
-Mega-PB5
 $Comp
 L power:+5V #PWR?
 U 1 1 60EFA72E
-P 4300 2550
+P 3950 1200
 AR Path="/60EFA72E" Ref="#PWR?"  Part="1" 
 AR Path="/60EBA1DA/60EFA72E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4300 2400 50  0001 C CNN
-F 1 "+5V" V 4315 2678 50  0000 L CNN
-F 2 "" H 4300 2550 50  0001 C CNN
-F 3 "" H 4300 2550 50  0001 C CNN
-	1    4300 2550
-	0    1    1    0   
+F 0 "#PWR?" H 3950 1050 50  0001 C CNN
+F 1 "+5V" V 3965 1328 50  0000 L CNN
+F 2 "" H 3950 1200 50  0001 C CNN
+F 3 "" H 3950 1200 50  0001 C CNN
+	1    3950 1200
+	1    0    0    -1  
 $EndComp
-Text Notes 3700 2200 0    50   ~ 0
+Text Notes 3200 800  0    50   ~ 0
 Inboard Indicators
-Text Notes 6450 2200 0    50   ~ 0
+Text Notes 7550 2700 0    50   ~ 0
 Outboard Indicators
 $Comp
 L Device:R R?
@@ -517,32 +273,6 @@ F 3 "" H 9450 3100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 60EFCDA3
-P 7700 2450
-AR Path="/60EFCDA3" Ref="R?"  Part="1" 
-AR Path="/60EBA1DA/60EFCDA3" Ref="R?"  Part="1" 
-F 0 "R?" V 7493 2450 50  0000 C CNN
-F 1 "1K" V 7584 2450 50  0000 C CNN
-F 2 "" V 7630 2450 50  0001 C CNN
-F 3 "~" H 7700 2450 50  0001 C CNN
-	1    7700 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60EFCDAD
-P 8000 2450
-AR Path="/60EFCDAD" Ref="D?"  Part="1" 
-AR Path="/60EBA1DA/60EFCDAD" Ref="D?"  Part="1" 
-F 0 "D?" H 7993 2667 50  0000 C CNN
-F 1 "PWR" H 7993 2576 50  0000 C CNN
-F 2 "" H 8000 2450 50  0001 C CNN
-F 3 "~" H 8000 2450 50  0001 C CNN
-	1    8000 2450
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 60F08C7A
 P 7850 3750
@@ -565,21 +295,6 @@ F 2 "" H 8150 3950 50  0001 C CNN
 F 3 "" H 8150 3950 50  0001 C CNN
 	1    8150 3950
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7400 2450 7550 2450
-$Comp
-L power:GND #PWR?
-U 1 1 60F2597C
-P 8150 2450
-AR Path="/60F2597C" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60F2597C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8150 2200 50  0001 C CNN
-F 1 "GND" V 8155 2322 50  0000 R CNN
-F 2 "" H 8150 2450 50  0001 C CNN
-F 3 "" H 8150 2450 50  0001 C CNN
-	1    8150 2450
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
@@ -699,31 +414,23 @@ F 3 "" H 6450 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7400 2450 7400 3550
-Wire Wire Line
-	7400 3550 7650 3550
-Wire Wire Line
-	7650 3650 7350 3650
-Wire Wire Line
-	7350 3650 7350 3100
-Wire Wire Line
 	7350 3100 7050 3100
 Wire Wire Line
 	7050 3500 7300 3500
 Wire Wire Line
-	7300 3500 7300 3750
+	7300 3500 7300 3650
 Wire Wire Line
-	7300 3750 7650 3750
+	7300 3650 7650 3650
 Wire Wire Line
-	7650 3850 7300 3850
+	7650 3750 7300 3750
 Wire Wire Line
-	7300 3850 7300 3950
+	7300 3750 7300 3950
 Wire Wire Line
 	7300 3950 7050 3950
 Wire Wire Line
-	7350 4350 7350 3950
+	7350 4350 7350 3850
 Wire Wire Line
-	7350 3950 7650 3950
+	7350 3850 7650 3850
 Wire Wire Line
 	7050 4350 7350 4350
 Wire Wire Line
@@ -750,193 +457,781 @@ Wire Wire Line
 	8550 3850 8550 4300
 Wire Wire Line
 	8550 4300 8850 4300
-Text Notes 3700 4850 0    50   ~ 0
-Outboard Connector
-$Comp
-L power:+5V #PWR?
-U 1 1 60F16AD2
-P 7650 3550
-AR Path="/60F16AD2" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60F16AD2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7650 3400 50  0001 C CNN
-F 1 "+5V" V 7665 3678 50  0000 L CNN
-F 2 "" H 7650 3550 50  0001 C CNN
-F 3 "" H 7650 3550 50  0001 C CNN
-	1    7650 3550
-	1    0    0    -1  
-$EndComp
-Connection ~ 7650 3550
-$Comp
-L Device:R R?
-U 1 1 60EAB3C9
-P 1650 4050
-AR Path="/60EAB3C9" Ref="R?"  Part="1" 
-AR Path="/60EBA1DA/60EAB3C9" Ref="R?"  Part="1" 
-F 0 "R?" V 1443 4050 50  0000 C CNN
-F 1 "10K" V 1534 4050 50  0000 C CNN
-F 2 "" V 1580 4050 50  0001 C CNN
-F 3 "~" H 1650 4050 50  0001 C CNN
-	1    1650 4050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_NPN_BCE Q?
-U 1 1 60EABE0D
-P 2000 4050
-F 0 "Q?" H 2191 4096 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 2191 4005 50  0000 L CNN
-F 2 "" H 2200 4150 50  0001 C CNN
-F 3 "~" H 2000 4050 50  0001 C CNN
-	1    2000 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60EAC9F7
-P 1300 4550
-AR Path="/60EAC9F7" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EAC9F7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1300 4300 50  0001 C CNN
-F 1 "GND" V 1305 4422 50  0000 R CNN
-F 2 "" H 1300 4550 50  0001 C CNN
-F 3 "" H 1300 4550 50  0001 C CNN
-	1    1300 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 60EAF1B0
-P 2100 4400
-AR Path="/60EAF1B0" Ref="R?"  Part="1" 
-AR Path="/60EBA1DA/60EAF1B0" Ref="R?"  Part="1" 
-F 0 "R?" V 1893 4400 50  0000 C CNN
-F 1 "1K" V 1984 4400 50  0000 C CNN
-F 2 "" V 2030 4400 50  0001 C CNN
-F 3 "~" H 2100 4400 50  0001 C CNN
-	1    2100 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60EAF5B8
-P 1450 4550
-AR Path="/60EAF5B8" Ref="D?"  Part="1" 
-AR Path="/60EBA1DA/60EAF5B8" Ref="D?"  Part="1" 
-F 0 "D?" H 1443 4767 50  0000 C CNN
-F 1 "RI" H 1443 4676 50  0000 C CNN
-F 2 "" H 1450 4550 50  0001 C CNN
-F 3 "~" H 1450 4550 50  0001 C CNN
-	1    1450 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60EB0F2C
-P 2100 3850
-AR Path="/60EB0F2C" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EB0F2C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2100 3700 50  0001 C CNN
-F 1 "+5V" V 2115 3978 50  0000 L CNN
-F 2 "" H 2100 3850 50  0001 C CNN
-F 3 "" H 2100 3850 50  0001 C CNN
-	1    2100 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 60EB5444
-P 1750 6250
-AR Path="/60EB5444" Ref="D?"  Part="1" 
-AR Path="/60EBA1DA/60EB5444" Ref="D?"  Part="1" 
-F 0 "D?" H 1743 6467 50  0000 C CNN
-F 1 "RI" H 1743 6376 50  0000 C CNN
-F 2 "" H 1750 6250 50  0001 C CNN
-F 3 "~" H 1750 6250 50  0001 C CNN
-	1    1750 6250
-	1    0    0    -1  
-$EndComp
-Text GLabel 1500 4050 0    50   Input ~ 0
-IN_LED1
-$Comp
-L power:GND #PWR?
-U 1 1 60EBCEE9
-P 1600 6250
-AR Path="/60EBCEE9" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60EBCEE9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1600 6000 50  0001 C CNN
-F 1 "GND" V 1605 6122 50  0000 R CNN
-F 2 "" H 1600 6250 50  0001 C CNN
-F 3 "" H 1600 6250 50  0001 C CNN
-	1    1600 6250
-	0    1    1    0   
-$EndComp
-Text GLabel 1550 4800 0    50   Output ~ 0
+Text Notes 7450 1100 0    50   ~ 0
+To Outboard Connector
+Text GLabel 7650 1450 0    50   Input ~ 0
 FP_LED1
-Text GLabel 1900 5450 0    50   Input ~ 0
-FP_LED1
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
-U 1 1 60EC8142
-P 2100 6450
-F 0 "J?" H 2150 6867 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 2150 6776 50  0000 C CNN
-F 2 "" H 2100 6450 50  0001 C CNN
-F 3 "~" H 2100 6450 50  0001 C CNN
-	1    2100 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60ECC9A8
-P 2400 6650
-AR Path="/60ECC9A8" Ref="#PWR?"  Part="1" 
-AR Path="/60EBA1DA/60ECC9A8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 6400 50  0001 C CNN
-F 1 "GND" V 2405 6522 50  0000 R CNN
-F 2 "" H 2400 6650 50  0001 C CNN
-F 3 "" H 2400 6650 50  0001 C CNN
-	1    2400 6650
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 60ED0F28
-P 2100 5650
-F 0 "J?" H 2150 6067 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 2150 5976 50  0000 C CNN
-F 2 "" H 2100 5650 50  0001 C CNN
-F 3 "~" H 2100 5650 50  0001 C CNN
-	1    2100 5650
+P 7850 1650
+F 0 "J?" H 7900 2067 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 7900 1976 50  0000 C CNN
+F 2 "" H 7850 1650 50  0001 C CNN
+F 3 "~" H 7850 1650 50  0001 C CNN
+	1    7850 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60ED29B1
-P 2400 5850
+P 8150 1850
 AR Path="/60ED29B1" Ref="#PWR?"  Part="1" 
 AR Path="/60EBA1DA/60ED29B1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 5600 50  0001 C CNN
-F 1 "GND" V 2405 5722 50  0000 R CNN
-F 2 "" H 2400 5850 50  0001 C CNN
-F 3 "" H 2400 5850 50  0001 C CNN
-	1    2400 5850
+F 0 "#PWR?" H 8150 1600 50  0001 C CNN
+F 1 "GND" V 8155 1722 50  0000 R CNN
+F 2 "" H 8150 1850 50  0001 C CNN
+F 3 "" H 8150 1850 50  0001 C CNN
+	1    8150 1850
 	0    -1   -1   0   
 $EndComp
-Wire Notes Line
-	800  3300 3100 3300
-Wire Notes Line
-	3100 3300 3100 7250
-Wire Notes Line
-	3100 7250 800  7250
-Wire Notes Line
-	800  7250 800  3300
-Text Notes 900  3450 0    50   ~ 0
-Transistor Drive 
+Text GLabel 7650 1550 0    50   Input ~ 0
+FP_LED3
+Text GLabel 7650 1650 0    50   Input ~ 0
+FP_LED5
+Text GLabel 7650 1750 0    50   Input ~ 0
+FP_LED7
+Text GLabel 7650 1850 0    50   Input ~ 0
+FP_LED9
+Text GLabel 8150 1450 2    50   Input ~ 0
+FP_LED2
+Text GLabel 8150 1550 2    50   Input ~ 0
+FP_LED4
+Text GLabel 8150 1650 2    50   Input ~ 0
+FP_LED6
+Text GLabel 8150 1750 2    50   Input ~ 0
+FP_LED8
 Wire Wire Line
-	2100 4550 2100 4800
+	7650 3550 7350 3550
 Wire Wire Line
-	1550 4800 2100 4800
+	7350 3550 7350 3100
+$Comp
+L Device:R R?
+U 1 1 60EF864C
+P 4450 3650
+AR Path="/60EF864C" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60EF864C" Ref="R?"  Part="1" 
+F 0 "R?" V 4243 3650 50  0000 C CNN
+F 1 "10K" V 4334 3650 50  0000 C CNN
+F 2 "" V 4380 3650 50  0001 C CNN
+F 3 "~" H 4450 3650 50  0001 C CNN
+	1    4450 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60EF8AA6
+P 4800 3650
+F 0 "Q?" H 4991 3696 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 4991 3605 50  0000 L CNN
+F 2 "" H 5000 3750 50  0001 C CNN
+F 3 "~" H 4800 3650 50  0001 C CNN
+	1    4800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EF8AB0
+P 4100 4150
+AR Path="/60EF8AB0" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60EF8AB0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4100 3900 50  0001 C CNN
+F 1 "GND" V 4105 4022 50  0000 R CNN
+F 2 "" H 4100 4150 50  0001 C CNN
+F 3 "" H 4100 4150 50  0001 C CNN
+	1    4100 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EF8ABA
+P 4900 4000
+AR Path="/60EF8ABA" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60EF8ABA" Ref="R?"  Part="1" 
+F 0 "R?" V 4693 4000 50  0000 C CNN
+F 1 "1K" V 4784 4000 50  0000 C CNN
+F 2 "" V 4830 4000 50  0001 C CNN
+F 3 "~" H 4900 4000 50  0001 C CNN
+	1    4900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60EF8AC4
+P 4250 4150
+AR Path="/60EF8AC4" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60EF8AC4" Ref="D?"  Part="1" 
+F 0 "D?" H 4243 4367 50  0000 C CNN
+F 1 "CD" H 4243 4276 50  0000 C CNN
+F 2 "" H 4250 4150 50  0001 C CNN
+F 3 "~" H 4250 4150 50  0001 C CNN
+	1    4250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60EF8ACE
+P 4900 3450
+AR Path="/60EF8ACE" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60EF8ACE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 3300 50  0001 C CNN
+F 1 "+5V" V 4915 3578 50  0000 L CNN
+F 2 "" H 4900 3450 50  0001 C CNN
+F 3 "" H 4900 3450 50  0001 C CNN
+	1    4900 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 4400 0    50   Output ~ 0
+FP_LED4
 Wire Wire Line
-	1600 4550 2100 4550
-Connection ~ 2100 4550
+	4900 4150 4900 4400
+Wire Wire Line
+	4350 4400 4900 4400
+Wire Wire Line
+	4400 4150 4900 4150
+Connection ~ 4900 4150
+$Comp
+L Device:R R?
+U 1 1 60F00B5F
+P 2650 2250
+AR Path="/60F00B5F" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F00B5F" Ref="R?"  Part="1" 
+F 0 "R?" V 2443 2250 50  0000 C CNN
+F 1 "10K" V 2534 2250 50  0000 C CNN
+F 2 "" V 2580 2250 50  0001 C CNN
+F 3 "~" H 2650 2250 50  0001 C CNN
+	1    2650 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60F01095
+P 3000 2250
+F 0 "Q?" H 3191 2296 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 3191 2205 50  0000 L CNN
+F 2 "" H 3200 2350 50  0001 C CNN
+F 3 "~" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F0109F
+P 2300 2750
+AR Path="/60F0109F" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F0109F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2300 2500 50  0001 C CNN
+F 1 "GND" V 2305 2622 50  0000 R CNN
+F 2 "" H 2300 2750 50  0001 C CNN
+F 3 "" H 2300 2750 50  0001 C CNN
+	1    2300 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F010A9
+P 3100 2600
+AR Path="/60F010A9" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F010A9" Ref="R?"  Part="1" 
+F 0 "R?" V 2893 2600 50  0000 C CNN
+F 1 "1K" V 2984 2600 50  0000 C CNN
+F 2 "" V 3030 2600 50  0001 C CNN
+F 3 "~" H 3100 2600 50  0001 C CNN
+	1    3100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60F010B3
+P 2450 2750
+AR Path="/60F010B3" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60F010B3" Ref="D?"  Part="1" 
+F 0 "D?" H 2443 2967 50  0000 C CNN
+F 1 "TX" H 2443 2876 50  0000 C CNN
+F 2 "" H 2450 2750 50  0001 C CNN
+F 3 "~" H 2450 2750 50  0001 C CNN
+	1    2450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60F010BD
+P 3100 2050
+AR Path="/60F010BD" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F010BD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3100 1900 50  0001 C CNN
+F 1 "+5V" V 3115 2178 50  0000 L CNN
+F 2 "" H 3100 2050 50  0001 C CNN
+F 3 "" H 3100 2050 50  0001 C CNN
+	1    3100 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 3000 0    50   Output ~ 0
+FP_LED1
+Wire Wire Line
+	3100 2750 3100 3000
+Wire Wire Line
+	2550 3000 3100 3000
+Wire Wire Line
+	2600 2750 3100 2750
+Connection ~ 3100 2750
+$Comp
+L Device:R R?
+U 1 1 60F010CD
+P 4450 2200
+AR Path="/60F010CD" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F010CD" Ref="R?"  Part="1" 
+F 0 "R?" V 4243 2200 50  0000 C CNN
+F 1 "10K" V 4334 2200 50  0000 C CNN
+F 2 "" V 4380 2200 50  0001 C CNN
+F 3 "~" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60F010D7
+P 4800 2200
+F 0 "Q?" H 4991 2246 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 4991 2155 50  0000 L CNN
+F 2 "" H 5000 2300 50  0001 C CNN
+F 3 "~" H 4800 2200 50  0001 C CNN
+	1    4800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F010E1
+P 4100 2700
+AR Path="/60F010E1" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F010E1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4100 2450 50  0001 C CNN
+F 1 "GND" V 4105 2572 50  0000 R CNN
+F 2 "" H 4100 2700 50  0001 C CNN
+F 3 "" H 4100 2700 50  0001 C CNN
+	1    4100 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F010EB
+P 4900 2550
+AR Path="/60F010EB" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F010EB" Ref="R?"  Part="1" 
+F 0 "R?" V 4693 2550 50  0000 C CNN
+F 1 "1K" V 4784 2550 50  0000 C CNN
+F 2 "" V 4830 2550 50  0001 C CNN
+F 3 "~" H 4900 2550 50  0001 C CNN
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60F010F5
+P 4250 2700
+AR Path="/60F010F5" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60F010F5" Ref="D?"  Part="1" 
+F 0 "D?" H 4243 2917 50  0000 C CNN
+F 1 "RX" H 4243 2826 50  0000 C CNN
+F 2 "" H 4250 2700 50  0001 C CNN
+F 3 "~" H 4250 2700 50  0001 C CNN
+	1    4250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60F010FF
+P 4900 2000
+AR Path="/60F010FF" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F010FF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 1850 50  0001 C CNN
+F 1 "+5V" V 4915 2128 50  0000 L CNN
+F 2 "" H 4900 2000 50  0001 C CNN
+F 3 "" H 4900 2000 50  0001 C CNN
+	1    4900 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 2950 0    50   Output ~ 0
+FP_LED2
+Wire Wire Line
+	4900 2700 4900 2950
+Wire Wire Line
+	4350 2950 4900 2950
+Wire Wire Line
+	4400 2700 4900 2700
+Connection ~ 4900 2700
+$Comp
+L Device:R R?
+U 1 1 60F0110F
+P 2600 3650
+AR Path="/60F0110F" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F0110F" Ref="R?"  Part="1" 
+F 0 "R?" V 2393 3650 50  0000 C CNN
+F 1 "10K" V 2484 3650 50  0000 C CNN
+F 2 "" V 2530 3650 50  0001 C CNN
+F 3 "~" H 2600 3650 50  0001 C CNN
+	1    2600 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60F01119
+P 2950 3650
+F 0 "Q?" H 3141 3696 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 3141 3605 50  0000 L CNN
+F 2 "" H 3150 3750 50  0001 C CNN
+F 3 "~" H 2950 3650 50  0001 C CNN
+	1    2950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F01123
+P 2250 4150
+AR Path="/60F01123" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F01123" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2250 3900 50  0001 C CNN
+F 1 "GND" V 2255 4022 50  0000 R CNN
+F 2 "" H 2250 4150 50  0001 C CNN
+F 3 "" H 2250 4150 50  0001 C CNN
+	1    2250 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F0112D
+P 3050 4000
+AR Path="/60F0112D" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F0112D" Ref="R?"  Part="1" 
+F 0 "R?" V 2843 4000 50  0000 C CNN
+F 1 "1K" V 2934 4000 50  0000 C CNN
+F 2 "" V 2980 4000 50  0001 C CNN
+F 3 "~" H 3050 4000 50  0001 C CNN
+	1    3050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60F01137
+P 2400 4150
+AR Path="/60F01137" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60F01137" Ref="D?"  Part="1" 
+F 0 "D?" H 2393 4367 50  0000 C CNN
+F 1 "OH" H 2393 4276 50  0000 C CNN
+F 2 "" H 2400 4150 50  0001 C CNN
+F 3 "~" H 2400 4150 50  0001 C CNN
+	1    2400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60F01141
+P 3050 3450
+AR Path="/60F01141" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F01141" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 3300 50  0001 C CNN
+F 1 "+5V" V 3065 3578 50  0000 L CNN
+F 2 "" H 3050 3450 50  0001 C CNN
+F 3 "" H 3050 3450 50  0001 C CNN
+	1    3050 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 4400 0    50   Output ~ 0
+FP_LED3
+Wire Wire Line
+	3050 4150 3050 4400
+Wire Wire Line
+	2500 4400 3050 4400
+Wire Wire Line
+	2550 4150 3050 4150
+Connection ~ 3050 4150
+$Comp
+L power:GND #PWR?
+U 1 1 60F2E17C
+P 2250 5600
+AR Path="/60F2E17C" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F2E17C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2250 5350 50  0001 C CNN
+F 1 "GND" V 2255 5472 50  0000 R CNN
+F 2 "" H 2250 5600 50  0001 C CNN
+F 3 "" H 2250 5600 50  0001 C CNN
+	1    2250 5600
+	0    1    1    0   
+$EndComp
+Text GLabel 2500 5850 0    50   Output ~ 0
+FP_LED5
+Connection ~ 3050 5600
+Wire Wire Line
+	2550 5600 3050 5600
+Wire Wire Line
+	2500 5850 3050 5850
+Wire Wire Line
+	3050 5600 3050 5850
+$Comp
+L power:+5V #PWR?
+U 1 1 60F2E19A
+P 3050 4900
+AR Path="/60F2E19A" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F2E19A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 4750 50  0001 C CNN
+F 1 "+5V" V 3065 5028 50  0000 L CNN
+F 2 "" H 3050 4900 50  0001 C CNN
+F 3 "" H 3050 4900 50  0001 C CNN
+	1    3050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60F2E190
+P 2400 5600
+AR Path="/60F2E190" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60F2E190" Ref="D?"  Part="1" 
+F 0 "D?" H 2393 5817 50  0000 C CNN
+F 1 "DTR" H 2393 5726 50  0000 C CNN
+F 2 "" H 2400 5600 50  0001 C CNN
+F 3 "~" H 2400 5600 50  0001 C CNN
+	1    2400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F2E186
+P 3050 5450
+AR Path="/60F2E186" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F2E186" Ref="R?"  Part="1" 
+F 0 "R?" V 2843 5450 50  0000 C CNN
+F 1 "1K" V 2934 5450 50  0000 C CNN
+F 2 "" V 2980 5450 50  0001 C CNN
+F 3 "~" H 3050 5450 50  0001 C CNN
+	1    3050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60F2E172
+P 2950 5100
+F 0 "Q?" H 3141 5146 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 3141 5055 50  0000 L CNN
+F 2 "" H 3150 5200 50  0001 C CNN
+F 3 "~" H 2950 5100 50  0001 C CNN
+	1    2950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F2E168
+P 2600 5100
+AR Path="/60F2E168" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F2E168" Ref="R?"  Part="1" 
+F 0 "R?" V 2393 5100 50  0000 C CNN
+F 1 "10K" V 2484 5100 50  0000 C CNN
+F 2 "" V 2530 5100 50  0001 C CNN
+F 3 "~" H 2600 5100 50  0001 C CNN
+	1    2600 5100
+	0    1    1    0   
+$EndComp
+Connection ~ 4850 5600
+Wire Wire Line
+	4350 5600 4850 5600
+Wire Wire Line
+	4300 5850 4850 5850
+Wire Wire Line
+	4850 5600 4850 5850
+Text GLabel 4300 5850 0    50   Output ~ 0
+FP_LED6
+$Comp
+L power:+5V #PWR?
+U 1 1 60EF5A08
+P 4850 4900
+AR Path="/60EF5A08" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60EF5A08" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 4750 50  0001 C CNN
+F 1 "+5V" V 4865 5028 50  0000 L CNN
+F 2 "" H 4850 4900 50  0001 C CNN
+F 3 "" H 4850 4900 50  0001 C CNN
+	1    4850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60EF59FE
+P 4200 5600
+AR Path="/60EF59FE" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60EF59FE" Ref="D?"  Part="1" 
+F 0 "D?" H 4193 5817 50  0000 C CNN
+F 1 "RI" H 4193 5726 50  0000 C CNN
+F 2 "" H 4200 5600 50  0001 C CNN
+F 3 "~" H 4200 5600 50  0001 C CNN
+	1    4200 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EF59F4
+P 4850 5450
+AR Path="/60EF59F4" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60EF59F4" Ref="R?"  Part="1" 
+F 0 "R?" V 4643 5450 50  0000 C CNN
+F 1 "1K" V 4734 5450 50  0000 C CNN
+F 2 "" V 4780 5450 50  0001 C CNN
+F 3 "~" H 4850 5450 50  0001 C CNN
+	1    4850 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EF59EA
+P 4050 5600
+AR Path="/60EF59EA" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60EF59EA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 5350 50  0001 C CNN
+F 1 "GND" V 4055 5472 50  0000 R CNN
+F 2 "" H 4050 5600 50  0001 C CNN
+F 3 "" H 4050 5600 50  0001 C CNN
+	1    4050 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60EF59E0
+P 4750 5100
+F 0 "Q?" H 4941 5146 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 4941 5055 50  0000 L CNN
+F 2 "" H 4950 5200 50  0001 C CNN
+F 3 "~" H 4750 5100 50  0001 C CNN
+	1    4750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EF55F4
+P 4400 5100
+AR Path="/60EF55F4" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60EF55F4" Ref="R?"  Part="1" 
+F 0 "R?" V 4193 5100 50  0000 C CNN
+F 1 "10K" V 4284 5100 50  0000 C CNN
+F 2 "" V 4330 5100 50  0001 C CNN
+F 3 "~" H 4400 5100 50  0001 C CNN
+	1    4400 5100
+	0    1    1    0   
+$EndComp
+Text GLabel 2450 5100 0    50   Input ~ 0
+Mega-PB4
+$Comp
+L power:GND #PWR?
+U 1 1 60F6AA13
+P 2250 7100
+AR Path="/60F6AA13" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F6AA13" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2250 6850 50  0001 C CNN
+F 1 "GND" V 2255 6972 50  0000 R CNN
+F 2 "" H 2250 7100 50  0001 C CNN
+F 3 "" H 2250 7100 50  0001 C CNN
+	1    2250 7100
+	0    1    1    0   
+$EndComp
+Text GLabel 2500 7350 0    50   Output ~ 0
+FP_LED7
+Connection ~ 3050 7100
+Wire Wire Line
+	2550 7100 3050 7100
+Wire Wire Line
+	2500 7350 3050 7350
+Wire Wire Line
+	3050 7100 3050 7350
+$Comp
+L power:+5V #PWR?
+U 1 1 60F6AF90
+P 3050 6400
+AR Path="/60F6AF90" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F6AF90" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 6250 50  0001 C CNN
+F 1 "+5V" V 3065 6528 50  0000 L CNN
+F 2 "" H 3050 6400 50  0001 C CNN
+F 3 "" H 3050 6400 50  0001 C CNN
+	1    3050 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60F6AF9A
+P 2400 7100
+AR Path="/60F6AF9A" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60F6AF9A" Ref="D?"  Part="1" 
+F 0 "D?" H 2393 7317 50  0000 C CNN
+F 1 "DSR" H 2393 7226 50  0000 C CNN
+F 2 "" H 2400 7100 50  0001 C CNN
+F 3 "~" H 2400 7100 50  0001 C CNN
+	1    2400 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F6AFA4
+P 3050 6950
+AR Path="/60F6AFA4" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F6AFA4" Ref="R?"  Part="1" 
+F 0 "R?" V 2843 6950 50  0000 C CNN
+F 1 "1K" V 2934 6950 50  0000 C CNN
+F 2 "" V 2980 6950 50  0001 C CNN
+F 3 "~" H 3050 6950 50  0001 C CNN
+	1    3050 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60F6AFAE
+P 2950 6600
+F 0 "Q?" H 3141 6646 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 3141 6555 50  0000 L CNN
+F 2 "" H 3150 6700 50  0001 C CNN
+F 3 "~" H 2950 6600 50  0001 C CNN
+	1    2950 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F6AFB8
+P 2600 6600
+AR Path="/60F6AFB8" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F6AFB8" Ref="R?"  Part="1" 
+F 0 "R?" V 2393 6600 50  0000 C CNN
+F 1 "10K" V 2484 6600 50  0000 C CNN
+F 2 "" V 2530 6600 50  0001 C CNN
+F 3 "~" H 2600 6600 50  0001 C CNN
+	1    2600 6600
+	0    1    1    0   
+$EndComp
+Connection ~ 4850 7100
+Wire Wire Line
+	4350 7100 4850 7100
+Wire Wire Line
+	4300 7350 4850 7350
+Wire Wire Line
+	4850 7100 4850 7350
+Text GLabel 4300 7350 0    50   Output ~ 0
+FP_LED9
+$Comp
+L power:+5V #PWR?
+U 1 1 60F6AFC7
+P 4850 6400
+AR Path="/60F6AFC7" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F6AFC7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 6250 50  0001 C CNN
+F 1 "+5V" V 4865 6528 50  0000 L CNN
+F 2 "" H 4850 6400 50  0001 C CNN
+F 3 "" H 4850 6400 50  0001 C CNN
+	1    4850 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60F6AFD1
+P 4200 7100
+AR Path="/60F6AFD1" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60F6AFD1" Ref="D?"  Part="1" 
+F 0 "D?" H 4193 7317 50  0000 C CNN
+F 1 "AA" H 4193 7226 50  0000 C CNN
+F 2 "" H 4200 7100 50  0001 C CNN
+F 3 "~" H 4200 7100 50  0001 C CNN
+	1    4200 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F6AFDB
+P 4850 6950
+AR Path="/60F6AFDB" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F6AFDB" Ref="R?"  Part="1" 
+F 0 "R?" V 4643 6950 50  0000 C CNN
+F 1 "1K" V 4734 6950 50  0000 C CNN
+F 2 "" V 4780 6950 50  0001 C CNN
+F 3 "~" H 4850 6950 50  0001 C CNN
+	1    4850 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F6AFE5
+P 4050 7100
+AR Path="/60F6AFE5" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F6AFE5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 6850 50  0001 C CNN
+F 1 "GND" V 4055 6972 50  0000 R CNN
+F 2 "" H 4050 7100 50  0001 C CNN
+F 3 "" H 4050 7100 50  0001 C CNN
+	1    4050 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60F6AFEF
+P 4750 6600
+F 0 "Q?" H 4941 6646 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 4941 6555 50  0000 L CNN
+F 2 "" H 4950 6700 50  0001 C CNN
+F 3 "~" H 4750 6600 50  0001 C CNN
+	1    4750 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F6AFF9
+P 4400 6600
+AR Path="/60F6AFF9" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F6AFF9" Ref="R?"  Part="1" 
+F 0 "R?" V 4193 6600 50  0000 C CNN
+F 1 "10K" V 4284 6600 50  0000 C CNN
+F 2 "" V 4330 6600 50  0001 C CNN
+F 3 "~" H 4400 6600 50  0001 C CNN
+	1    4400 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F8EB9D
+P 6900 4750
+AR Path="/60F8EB9D" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60F8EB9D" Ref="R?"  Part="1" 
+F 0 "R?" V 6693 4750 50  0000 C CNN
+F 1 "1K" V 6784 4750 50  0000 C CNN
+F 2 "" V 6830 4750 50  0001 C CNN
+F 3 "~" H 6900 4750 50  0001 C CNN
+	1    6900 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60F8F1F5
+P 6600 4750
+AR Path="/60F8F1F5" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60F8F1F5" Ref="D?"  Part="1" 
+F 0 "D?" H 6593 4967 50  0000 C CNN
+F 1 "Spare" H 6593 4876 50  0000 C CNN
+F 2 "" H 6600 4750 50  0001 C CNN
+F 3 "~" H 6600 4750 50  0001 C CNN
+	1    6600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F8F1FF
+P 6450 4750
+AR Path="/60F8F1FF" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60F8F1FF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 4500 50  0001 C CNN
+F 1 "GND" V 6455 4622 50  0000 R CNN
+F 2 "" H 6450 4750 50  0001 C CNN
+F 3 "" H 6450 4750 50  0001 C CNN
+	1    6450 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 4750 7450 4750
+Wire Wire Line
+	7450 4750 7450 3950
+Wire Wire Line
+	7450 3950 7650 3950
+Wire Wire Line
+	3950 1450 3950 1200
 $EndSCHEMATC

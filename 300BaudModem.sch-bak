@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 12
 Title "300 Baud Audio FSK Modem "
 Date "2021-07-08"
 Rev "0.1"
@@ -72,5 +72,11 @@ S 9500 4000 1000 1050
 U 60F27560
 F0 "Serial2WiFI" 50
 F1 "Ser2WIFI.sch" 50
+$EndSheet
+$Sheet
+S 4500 5650 1000 900 
+U 60FC6F01
+F0 "hybrid" 50
+F1 "hybrid.sch" 50
 $EndSheet
 $EndSCHEMATC

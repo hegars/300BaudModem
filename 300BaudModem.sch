@@ -26,7 +26,7 @@ F0 "ECBus" 50
 F1 "ECBus.sch" 50
 $EndSheet
 $Sheet
-S 5000 3500 1000 1000
+S 5300 3050 1000 1000
 U 60E76DCE
 F0 "uController" 50
 F1 "uController.sch" 50
@@ -74,7 +74,7 @@ F0 "Serial2WiFI" 50
 F1 "Ser2WIFI.sch" 50
 $EndSheet
 $Sheet
-S 4500 5650 1000 900 
+S 4000 5550 1000 900 
 U 60FC6F01
 F0 "hybrid" 50
 F1 "hybrid.sch" 50

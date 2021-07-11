@@ -88,16 +88,16 @@ Wire Wire Line
 Wire Wire Line
 	6800 3000 7000 3000
 Wire Wire Line
-	7000 3000 7000 2500
+	7000 3000 7000 2700
 $Comp
 L Device:R R?
 U 1 1 60FD57B4
-P 7200 3000
-F 0 "R?" V 6993 3000 50  0000 C CNN
-F 1 "600" V 7084 3000 50  0000 C CNN
-F 2 "" V 7130 3000 50  0001 C CNN
-F 3 "~" H 7200 3000 50  0001 C CNN
-	1    7200 3000
+P 7200 2700
+F 0 "R?" V 6993 2700 50  0000 C CNN
+F 1 "600" V 7084 2700 50  0000 C CNN
+F 2 "" V 7130 2700 50  0001 C CNN
+F 3 "~" H 7200 2700 50  0001 C CNN
+	1    7200 2700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -148,16 +148,6 @@ F 3 "~" H 7200 2100 50  0001 C CNN
 	1    7200 2100
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	7400 2500 7400 3000
-Wire Wire Line
-	7050 3000 7000 3000
-Connection ~ 7000 3000
-Wire Wire Line
-	7350 3000 7400 3000
-Connection ~ 7400 3000
-Wire Wire Line
-	7400 3000 7400 4400
 $Comp
 L Device:Transformer_1P_SS T?
 U 1 1 60FECA17
@@ -211,4 +201,22 @@ Wire Wire Line
 	7000 3400 7000 4000
 Wire Wire Line
 	7000 4000 6800 4000
+Text Notes 3000 1500 0    50   ~ 0
+4-Wire Transmit
+Text Notes 6950 1500 0    50   ~ 0
+4-Wire Receive
+Text Notes 4850 6500 0    50   ~ 0
+2-Wire Transmit/Receive
+Wire Wire Line
+	7400 2500 7400 2700
+Wire Wire Line
+	7050 2700 7000 2700
+Connection ~ 7000 2700
+Wire Wire Line
+	7000 2700 7000 2500
+Wire Wire Line
+	7350 2700 7400 2700
+Connection ~ 7400 2700
+Wire Wire Line
+	7400 2700 7400 4400
 $EndSCHEMATC

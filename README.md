@@ -37,7 +37,12 @@ RetreoBrew Interface (https://www.retrobrewcomputers.org/doku.php?id=boards:ecb:
 ## Case Options
 ![Case](/images/case.jpg)
 
-## RJ45 Telephone Interface Slot
+## Option Slots
+
+### Dual TRRS Connectors
+* Buildout cable for Kenwood plug
+
+### RJ45 Telephone Interface Slot
 
 * E&M Type 5
 * 4 to 2 wire Hybrid Telephone Interface (https://www.epanorama.net/documents/telecom/teleinterface.html)

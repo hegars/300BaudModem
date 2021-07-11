@@ -338,4 +338,12 @@ Wire Wire Line
 	6400 4050 6750 4050
 Wire Wire Line
 	6750 3850 6400 3850
+Wire Notes Line
+	4100 3050 4100 4750
+Wire Notes Line
+	4100 4750 7000 4750
+Wire Notes Line
+	7000 4750 7000 3050
+Wire Notes Line
+	7000 3050 4100 3050
 $EndSCHEMATC

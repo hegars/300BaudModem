@@ -260,49 +260,49 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 60EBEC0E
-P 3800 5300
+P 3850 5200
 AR Path="/60EBEC0E" Ref="#PWR?"  Part="1" 
 AR Path="/60EBA1DA/60EBEC0E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3800 5150 50  0001 C CNN
-F 1 "+5V" V 3815 5428 50  0000 L CNN
-F 2 "" H 3800 5300 50  0001 C CNN
-F 3 "" H 3800 5300 50  0001 C CNN
-	1    3800 5300
+F 0 "#PWR?" H 3850 5050 50  0001 C CNN
+F 1 "+5V" V 3865 5328 50  0000 L CNN
+F 2 "" H 3850 5200 50  0001 C CNN
+F 3 "" H 3850 5200 50  0001 C CNN
+	1    3850 5200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 60EF665D
-P 4000 5500
-F 0 "J?" H 4050 5917 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 4050 5826 50  0000 C CNN
-F 2 "" H 4000 5500 50  0001 C CNN
-F 3 "~" H 4000 5500 50  0001 C CNN
-	1    4000 5500
+P 4050 5400
+F 0 "J?" H 4100 5817 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4100 5726 50  0000 C CNN
+F 2 "" H 4050 5400 50  0001 C CNN
+F 3 "~" H 4050 5400 50  0001 C CNN
+	1    4050 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60EF8D80
-P 4300 5700
+P 4350 5600
 AR Path="/60EF8D80" Ref="#PWR?"  Part="1" 
 AR Path="/60EBA1DA/60EF8D80" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4300 5450 50  0001 C CNN
-F 1 "GND" V 4305 5572 50  0000 R CNN
-F 2 "" H 4300 5700 50  0001 C CNN
-F 3 "" H 4300 5700 50  0001 C CNN
-	1    4300 5700
+F 0 "#PWR?" H 4350 5350 50  0001 C CNN
+F 1 "GND" V 4355 5472 50  0000 R CNN
+F 2 "" H 4350 5600 50  0001 C CNN
+F 3 "" H 4350 5600 50  0001 C CNN
+	1    4350 5600
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4300 5300 2    50   Input ~ 0
+Text GLabel 4350 5200 2    50   Input ~ 0
 Mega-PB0
-Text GLabel 3800 5400 0    50   Input ~ 0
+Text GLabel 3850 5300 0    50   Input ~ 0
 Mega-PB1
-Text GLabel 4300 5400 2    50   Input ~ 0
+Text GLabel 4350 5300 2    50   Input ~ 0
 Mega-PB2
-Text GLabel 3800 5500 0    50   Input ~ 0
+Text GLabel 3850 5400 0    50   Input ~ 0
 Mega-PB4
-Text GLabel 4300 5500 2    50   Input ~ 0
+Text GLabel 4350 5400 2    50   Input ~ 0
 Mega-PB5
 $Comp
 L power:+5V #PWR?
@@ -750,7 +750,7 @@ Wire Wire Line
 	8550 3850 8550 4300
 Wire Wire Line
 	8550 4300 8850 4300
-Text Notes 3650 4950 0    50   ~ 0
+Text Notes 3700 4850 0    50   ~ 0
 Outboard Connector
 $Comp
 L power:+5V #PWR?
@@ -766,4 +766,177 @@ F 3 "" H 7650 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7650 3550
+$Comp
+L Device:R R?
+U 1 1 60EAB3C9
+P 1650 4050
+AR Path="/60EAB3C9" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60EAB3C9" Ref="R?"  Part="1" 
+F 0 "R?" V 1443 4050 50  0000 C CNN
+F 1 "10K" V 1534 4050 50  0000 C CNN
+F 2 "" V 1580 4050 50  0001 C CNN
+F 3 "~" H 1650 4050 50  0001 C CNN
+	1    1650 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60EABE0D
+P 2000 4050
+F 0 "Q?" H 2191 4096 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 2191 4005 50  0000 L CNN
+F 2 "" H 2200 4150 50  0001 C CNN
+F 3 "~" H 2000 4050 50  0001 C CNN
+	1    2000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EAC9F7
+P 1300 4550
+AR Path="/60EAC9F7" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60EAC9F7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1300 4300 50  0001 C CNN
+F 1 "GND" V 1305 4422 50  0000 R CNN
+F 2 "" H 1300 4550 50  0001 C CNN
+F 3 "" H 1300 4550 50  0001 C CNN
+	1    1300 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EAF1B0
+P 2100 4400
+AR Path="/60EAF1B0" Ref="R?"  Part="1" 
+AR Path="/60EBA1DA/60EAF1B0" Ref="R?"  Part="1" 
+F 0 "R?" V 1893 4400 50  0000 C CNN
+F 1 "1K" V 1984 4400 50  0000 C CNN
+F 2 "" V 2030 4400 50  0001 C CNN
+F 3 "~" H 2100 4400 50  0001 C CNN
+	1    2100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60EAF5B8
+P 1450 4550
+AR Path="/60EAF5B8" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60EAF5B8" Ref="D?"  Part="1" 
+F 0 "D?" H 1443 4767 50  0000 C CNN
+F 1 "RI" H 1443 4676 50  0000 C CNN
+F 2 "" H 1450 4550 50  0001 C CNN
+F 3 "~" H 1450 4550 50  0001 C CNN
+	1    1450 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60EB0F2C
+P 2100 3850
+AR Path="/60EB0F2C" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60EB0F2C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 3700 50  0001 C CNN
+F 1 "+5V" V 2115 3978 50  0000 L CNN
+F 2 "" H 2100 3850 50  0001 C CNN
+F 3 "" H 2100 3850 50  0001 C CNN
+	1    2100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60EB5444
+P 1750 6250
+AR Path="/60EB5444" Ref="D?"  Part="1" 
+AR Path="/60EBA1DA/60EB5444" Ref="D?"  Part="1" 
+F 0 "D?" H 1743 6467 50  0000 C CNN
+F 1 "RI" H 1743 6376 50  0000 C CNN
+F 2 "" H 1750 6250 50  0001 C CNN
+F 3 "~" H 1750 6250 50  0001 C CNN
+	1    1750 6250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 4050 0    50   Input ~ 0
+IN_LED1
+$Comp
+L power:GND #PWR?
+U 1 1 60EBCEE9
+P 1600 6250
+AR Path="/60EBCEE9" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60EBCEE9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1600 6000 50  0001 C CNN
+F 1 "GND" V 1605 6122 50  0000 R CNN
+F 2 "" H 1600 6250 50  0001 C CNN
+F 3 "" H 1600 6250 50  0001 C CNN
+	1    1600 6250
+	0    1    1    0   
+$EndComp
+Text GLabel 1550 4800 0    50   Output ~ 0
+FP_LED1
+Text GLabel 1900 5450 0    50   Input ~ 0
+FP_LED1
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 60EC8142
+P 2100 6450
+F 0 "J?" H 2150 6867 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 2150 6776 50  0000 C CNN
+F 2 "" H 2100 6450 50  0001 C CNN
+F 3 "~" H 2100 6450 50  0001 C CNN
+	1    2100 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60ECC9A8
+P 2400 6650
+AR Path="/60ECC9A8" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60ECC9A8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 6400 50  0001 C CNN
+F 1 "GND" V 2405 6522 50  0000 R CNN
+F 2 "" H 2400 6650 50  0001 C CNN
+F 3 "" H 2400 6650 50  0001 C CNN
+	1    2400 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 60ED0F28
+P 2100 5650
+F 0 "J?" H 2150 6067 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 2150 5976 50  0000 C CNN
+F 2 "" H 2100 5650 50  0001 C CNN
+F 3 "~" H 2100 5650 50  0001 C CNN
+	1    2100 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60ED29B1
+P 2400 5850
+AR Path="/60ED29B1" Ref="#PWR?"  Part="1" 
+AR Path="/60EBA1DA/60ED29B1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 5600 50  0001 C CNN
+F 1 "GND" V 2405 5722 50  0000 R CNN
+F 2 "" H 2400 5850 50  0001 C CNN
+F 3 "" H 2400 5850 50  0001 C CNN
+	1    2400 5850
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	800  3300 3100 3300
+Wire Notes Line
+	3100 3300 3100 7250
+Wire Notes Line
+	3100 7250 800  7250
+Wire Notes Line
+	800  7250 800  3300
+Text Notes 900  3450 0    50   ~ 0
+Transistor Drive 
+Wire Wire Line
+	2100 4550 2100 4800
+Wire Wire Line
+	1550 4800 2100 4800
+Wire Wire Line
+	1600 4550 2100 4550
+Connection ~ 2100 4550
 $EndSCHEMATC

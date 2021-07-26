@@ -219,4 +219,6 @@ Wire Wire Line
 Connection ~ 7900 2950
 Wire Wire Line
 	7900 2950 7900 4650
+Text Notes 5850 3100 0    50   ~ 0
+Network Buildout\n
 $EndSCHEMATC

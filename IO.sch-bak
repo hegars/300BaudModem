@@ -26,8 +26,6 @@ F 3 "~" H 3900 5600 50  0001 C CNN
 	1    3900 5600
 	1    0    0    1   
 $EndComp
-Text Notes 3900 6300 0    50   ~ 0
-E&M Type Output interface
 $Comp
 L Connector:RJ45 J?
 U 1 1 60EA121E
@@ -280,7 +278,7 @@ F 3 "~" H 6750 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 5050 5650 0    50   ~ 0
-RJ45 Module Interface\nTELEPHONY
+RJ45 Expansion Interface\n
 Text GLabel 7050 3250 2    50   Output ~ 0
 RST_Request
 Wire Notes Line
@@ -321,21 +319,21 @@ F 3 "~" H 2450 4200 50  0001 C CNN
 	1    2450 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 5900 2    50   Input ~ 0
+Text GLabel 9750 5900 2    50   Input ~ 0
 E&M-SB
-Text GLabel 4000 5200 2    50   Input ~ 0
+Text GLabel 9750 5200 2    50   Input ~ 0
 E&M-SG
-Text GLabel 4000 5800 2    50   Input ~ 0
+Text GLabel 9750 5800 2    50   Input ~ 0
 E&M-M
-Text GLabel 4000 5400 2    50   Input ~ 0
+Text GLabel 9750 5400 2    50   Input ~ 0
 E&M-T1
-Text GLabel 4000 5300 2    50   Input ~ 0
+Text GLabel 9750 5300 2    50   Input ~ 0
 E&M-E
-Text GLabel 4000 5700 2    50   Input ~ 0
+Text GLabel 9750 5700 2    50   Input ~ 0
 E&M-R1
-Text GLabel 4000 5600 2    50   Input ~ 0
+Text GLabel 9750 5600 2    50   Input ~ 0
 E&M-R
-Text GLabel 4000 5500 2    50   Input ~ 0
+Text GLabel 9750 5500 2    50   Input ~ 0
 E&M-T
 Wire Wire Line
 	2950 5200 3700 5200
@@ -497,11 +495,11 @@ $EndComp
 Text Notes 8850 700  0    50   ~ 0
 Kenwood 2-Pin
 Wire Notes Line
-	8750 550  8750 4300
+	8750 550  8750 4500
 Wire Notes Line
-	8750 4300 11000 4300
+	8750 4500 11000 4500
 Wire Notes Line
-	11000 4300 11000 550 
+	11000 4500 11000 550 
 Wire Notes Line
 	11000 550  8750 550 
 Text GLabel 9300 1300 0    50   Input ~ 0
@@ -679,4 +677,27 @@ Wire Notes Line
 	9400 1000 9550 1000
 Wire Notes Line
 	9550 1000 9550 2400
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 60FD1319
+P 9550 5600
+AR Path="/60FD1319" Ref="J?"  Part="1" 
+AR Path="/60E9D9E5/60FD1319" Ref="J?"  Part="1" 
+F 0 "J?" H 9468 4975 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 9468 5066 50  0000 C CNN
+F 2 "" H 9550 5600 50  0001 C CNN
+F 3 "~" H 9550 5600 50  0001 C CNN
+	1    9550 5600
+	-1   0    0    1   
+$EndComp
+Text Notes 8850 6250 0    50   ~ 0
+RJ45 E&M Pinout\n
+Wire Notes Line
+	8750 4800 8750 6350
+Wire Notes Line
+	8750 6350 11000 6350
+Wire Notes Line
+	11000 6350 11000 4800
+Wire Notes Line
+	11000 4800 8750 4800
 $EndSCHEMATC

@@ -80,7 +80,7 @@ Text GLabel 6150 3600 2    50   Input ~ 0
 Mega-PB5
 Text GLabel 6150 4000 2    50   Input ~ 0
 Mega-PC0
-Text GLabel 4550 3100 0    50   Input ~ 0
+Text GLabel 4350 3100 0    50   Input ~ 0
 Mega-AREF
 Text GLabel 6150 3400 2    50   Input ~ 0
 Mega-PB3
@@ -123,32 +123,31 @@ Mega-XTAL2
 $Comp
 L Device:C C?
 U 1 1 60E83196
-P 4800 3100
+P 4700 3100
 AR Path="/60E83196" Ref="C?"  Part="1" 
 AR Path="/60E76DCE/60E83196" Ref="C?"  Part="1" 
-F 0 "C?" V 4548 3100 50  0000 C CNN
-F 1 "100n" V 4639 3100 50  0000 C CNN
-F 2 "" H 4838 2950 50  0001 C CNN
-F 3 "~" H 4800 3100 50  0001 C CNN
-	1    4800 3100
+F 0 "C?" V 4448 3100 50  0000 C CNN
+F 1 "100n" V 4539 3100 50  0000 C CNN
+F 2 "" H 4738 2950 50  0001 C CNN
+F 3 "~" H 4700 3100 50  0001 C CNN
+	1    4700 3100
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60E8319C
-P 4650 3100
+P 4500 3200
 AR Path="/60E8319C" Ref="#PWR?"  Part="1" 
 AR Path="/60E76DCE/60E8319C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4650 2850 50  0001 C CNN
-F 1 "GND" H 4655 2927 50  0000 C CNN
-F 2 "" H 4650 3100 50  0001 C CNN
-F 3 "" H 4650 3100 50  0001 C CNN
-	1    4650 3100
+F 0 "#PWR?" H 4500 2950 50  0001 C CNN
+F 1 "GND" H 4505 3027 50  0000 C CNN
+F 2 "" H 4500 3200 50  0001 C CNN
+F 3 "" H 4500 3200 50  0001 C CNN
+	1    4500 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 3100 4650 3100
-Connection ~ 4650 3100
+	4350 3100 4500 3100
 Wire Wire Line
 	5650 2800 5650 2550
 Wire Wire Line
@@ -492,4 +491,11 @@ F 3 "~" H 7750 4300 50  0001 C CNN
 	1    7750 4300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4500 3200 4500 3100
+Connection ~ 4500 3100
+Wire Wire Line
+	4500 3100 4550 3100
+Wire Wire Line
+	4850 3100 4950 3100
 $EndSCHEMATC

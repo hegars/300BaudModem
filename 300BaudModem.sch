@@ -38,7 +38,7 @@ F0 "Power" 50
 F1 "Power.sch" 50
 $EndSheet
 $Sheet
-S 2500 4000 1000 1000
+S 2450 4000 1000 1000
 U 60E9D9E5
 F0 "IO" 50
 F1 "IO.sch" 50
